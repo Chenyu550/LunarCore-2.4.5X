@@ -378,7 +378,7 @@ public class ResourceLoader {
     private static void loadRogueMapGen() {
         File file = new File(LunarCore.getConfig().getDataDir() + "/RogueMapGen.json");
         if (!file.exists()) {
-            LunarCore.getLogger().warn("RogueMapGen not found in data folder. Simulated universe will not work.");
+            LunarCore.getLogger().warn("在 resources 文件夹中找不到 RogueMapGen。模拟宇宙将无法使用。");
             return;
         }
 

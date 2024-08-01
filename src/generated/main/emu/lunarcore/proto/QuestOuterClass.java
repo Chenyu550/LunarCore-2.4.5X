@@ -19,22 +19,38 @@ public final class QuestOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional int64 finish_time = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional int64 finish_time = 13;</code>
      */
     private long finishTime;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 progress = 6;</code>
      */
     private int progress;
 
     /**
-     * <code>optional uint32 id = 15;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 id = 10;</code>
      */
     private int id;
 
     /**
-     * <code>optional .QuestStatus status = 8;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .QuestStatus status = 15;</code>
      */
     private int status;
 
@@ -49,7 +65,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional int64 finish_time = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional int64 finish_time = 13;</code>
      * @return whether the finishTime field is set
      */
     public boolean hasFinishTime() {
@@ -57,7 +77,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional int64 finish_time = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional int64 finish_time = 13;</code>
      * @return this
      */
     public Quest clearFinishTime() {
@@ -67,7 +91,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional int64 finish_time = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional int64 finish_time = 13;</code>
      * @return the finishTime
      */
     public long getFinishTime() {
@@ -75,7 +103,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional int64 finish_time = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional int64 finish_time = 13;</code>
      * @param value the finishTime to set
      * @return this
      */
@@ -86,6 +118,10 @@ public final class QuestOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 progress = 6;</code>
      * @return whether the progress field is set
      */
@@ -94,6 +130,10 @@ public final class QuestOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 progress = 6;</code>
      * @return this
      */
@@ -104,6 +144,10 @@ public final class QuestOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 progress = 6;</code>
      * @return the progress
      */
@@ -112,6 +156,10 @@ public final class QuestOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 progress = 6;</code>
      * @param value the progress to set
      * @return this
@@ -123,7 +171,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 15;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 id = 10;</code>
      * @return whether the id field is set
      */
     public boolean hasId() {
@@ -131,7 +183,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 15;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 id = 10;</code>
      * @return this
      */
     public Quest clearId() {
@@ -141,7 +197,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 15;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 id = 10;</code>
      * @return the id
      */
     public int getId() {
@@ -149,7 +209,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 15;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 id = 10;</code>
      * @param value the id to set
      * @return this
      */
@@ -160,7 +224,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional .QuestStatus status = 8;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .QuestStatus status = 15;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
@@ -168,7 +236,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional .QuestStatus status = 8;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .QuestStatus status = 15;</code>
      * @return this
      */
     public Quest clearStatus() {
@@ -178,7 +250,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional .QuestStatus status = 8;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .QuestStatus status = 15;</code>
      * @return the status
      */
     public QuestStatusOuterClass.QuestStatus getStatus() {
@@ -211,7 +287,11 @@ public final class QuestOuterClass {
     }
 
     /**
-     * <code>optional .QuestStatus status = 8;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .QuestStatus status = 15;</code>
      * @param value the status to set
      * @return this
      */
@@ -298,7 +378,7 @@ public final class QuestOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 104);
         output.writeInt64NoTag(finishTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -306,11 +386,11 @@ public final class QuestOuterClass {
         output.writeUInt32NoTag(progress);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(id);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 120);
         output.writeEnumNoTag(status);
       }
     }
@@ -340,7 +420,7 @@ public final class QuestOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 104: {
             // finishTime
             finishTime = input.readInt64();
             bitField0_ |= 0x00000001;
@@ -354,20 +434,20 @@ public final class QuestOuterClass {
             progress = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
+          case 80: {
+            // id
+            id = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
             if (tag != 120) {
               break;
             }
           }
           case 120: {
-            // id
-            id = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 64) {
-              break;
-            }
-          }
-          case 64: {
             // status
             final int value = input.readInt32();
             if (QuestStatusOuterClass.QuestStatus.forNumber(value) != null) {

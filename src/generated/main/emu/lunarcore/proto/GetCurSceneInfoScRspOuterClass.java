@@ -19,12 +19,16 @@ public final class GetCurSceneInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 15;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .SceneInfo scene = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .SceneInfo scene = 11;</code>
      */
     private final SceneInfoOuterClass.SceneInfo scene = SceneInfoOuterClass.SceneInfo.newInstance();
 
@@ -39,7 +43,7 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +51,7 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return this
      */
     public GetCurSceneInfoScRsp clearRetcode() {
@@ -57,7 +61,7 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +69,7 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +80,11 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .SceneInfo scene = 11;</code>
      * @return whether the scene field is set
      */
     public boolean hasScene() {
@@ -84,7 +92,11 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .SceneInfo scene = 11;</code>
      * @return this
      */
     public GetCurSceneInfoScRsp clearScene() {
@@ -94,7 +106,11 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .SceneInfo scene = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +124,11 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .SceneInfo scene = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +142,11 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional .SceneInfo scene = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .SceneInfo scene = 11;</code>
      * @param value the scene to set
      * @return this
      */
@@ -198,11 +222,11 @@ public final class GetCurSceneInfoScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 26);
+        output.writeRawByte((byte) 90);
         output.writeMessageNoTag(scene);
       }
     }
@@ -226,16 +250,16 @@ public final class GetCurSceneInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 120: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 90) {
               break;
             }
           }
-          case 26: {
+          case 90: {
             // scene
             input.readMessage(scene);
             bitField0_ |= 0x00000002;

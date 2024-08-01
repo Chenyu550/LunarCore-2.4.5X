@@ -20,6 +20,10 @@ public final class RotateMapCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 4;</code>
      */
     private int groupId;
@@ -50,6 +54,10 @@ public final class RotateMapCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 4;</code>
      * @return whether the groupId field is set
      */
@@ -58,6 +66,10 @@ public final class RotateMapCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 4;</code>
      * @return this
      */
@@ -68,6 +80,10 @@ public final class RotateMapCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 4;</code>
      * @return the groupId
      */
@@ -76,6 +92,10 @@ public final class RotateMapCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 4;</code>
      * @param value the groupId to set
      * @return this

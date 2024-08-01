@@ -19,12 +19,20 @@ public final class DressAvatarCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 avatar_id = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 5;</code>
      */
     private int avatarId;
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      */
     private int equipmentUniqueId;
 
@@ -39,7 +47,11 @@ public final class DressAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 5;</code>
      * @return whether the avatarId field is set
      */
     public boolean hasAvatarId() {
@@ -47,7 +59,11 @@ public final class DressAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 5;</code>
      * @return this
      */
     public DressAvatarCsReq clearAvatarId() {
@@ -57,7 +73,11 @@ public final class DressAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 5;</code>
      * @return the avatarId
      */
     public int getAvatarId() {
@@ -65,7 +85,11 @@ public final class DressAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 5;</code>
      * @param value the avatarId to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class DressAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      * @return whether the equipmentUniqueId field is set
      */
     public boolean hasEquipmentUniqueId() {
@@ -84,7 +112,11 @@ public final class DressAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      * @return this
      */
     public DressAvatarCsReq clearEquipmentUniqueId() {
@@ -94,7 +126,11 @@ public final class DressAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      * @return the equipmentUniqueId
      */
     public int getEquipmentUniqueId() {
@@ -102,7 +138,11 @@ public final class DressAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      * @param value the equipmentUniqueId to set
      * @return this
      */
@@ -177,11 +217,11 @@ public final class DressAvatarCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(avatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(equipmentUniqueId);
       }
     }
@@ -205,16 +245,16 @@ public final class DressAvatarCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 40: {
             // avatarId
             avatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 56) {
               break;
             }
           }
-          case 32: {
+          case 56: {
             // equipmentUniqueId
             equipmentUniqueId = input.readUInt32();
             bitField0_ |= 0x00000002;

@@ -19,6 +19,10 @@ public final class ChessRogueRollDiceCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 4;</code>
      */
     private int entityId;
@@ -34,6 +38,10 @@ public final class ChessRogueRollDiceCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 4;</code>
      * @return whether the entityId field is set
      */
@@ -42,6 +50,10 @@ public final class ChessRogueRollDiceCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 4;</code>
      * @return this
      */
@@ -52,6 +64,10 @@ public final class ChessRogueRollDiceCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 4;</code>
      * @return the entityId
      */
@@ -60,6 +76,10 @@ public final class ChessRogueRollDiceCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 4;</code>
      * @param value the entityId to set
      * @return this

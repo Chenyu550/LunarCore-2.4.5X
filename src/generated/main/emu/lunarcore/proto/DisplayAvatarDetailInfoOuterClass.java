@@ -21,54 +21,81 @@ public final class DisplayAvatarDetailInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 dressed_skin_id = 4;</code>
-     */
-    private int dressedSkinId;
-
-    /**
-     * <code>optional uint32 rank = 7;</code>
-     */
-    private int rank;
-
-    /**
-     * <code>optional uint32 exp = 8;</code>
-     */
-    private int exp;
-
-    /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 1;</code>
      */
     private int avatarId;
 
     /**
-     * <code>optional uint32 level = 10;</code>
-     */
-    private int level;
-
-    /**
-     * <code>optional uint32 pos = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 pos = 5;</code>
      */
     private int pos;
 
     /**
-     * <code>optional uint32 promotion = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 promotion = 6;</code>
      */
     private int promotion;
 
     /**
-     * <code>optional .DisplayEquipmentInfo equipment = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 level = 8;</code>
+     */
+    private int level;
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 rank = 10;</code>
+     */
+    private int rank;
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 exp = 12;</code>
+     */
+    private int exp;
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 dressed_skin_id = 14;</code>
+     */
+    private int dressedSkinId;
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .DisplayEquipmentInfo equipment = 15;</code>
      */
     private final DisplayEquipmentInfoOuterClass.DisplayEquipmentInfo equipment = DisplayEquipmentInfoOuterClass.DisplayEquipmentInfo.newInstance();
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 1;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
      */
     private final RepeatedInt allPathUnlockedSpecialPointIdList = RepeatedInt.newEmptyInstance();
-
-    /**
-     * <code>repeated .AvatarSkillTree skilltree_list = 2;</code>
-     */
-    private final RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> skilltreeList = RepeatedMessage.newEmptyInstance(AvatarSkillTreeOuterClass.AvatarSkillTree.getFactory());
 
     /**
      * <code>repeated .AvatarSkillTree all_path_special_skilltree_list = 3;</code>
@@ -76,7 +103,20 @@ public final class DisplayAvatarDetailInfoOuterClass {
     private final RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> allPathSpecialSkilltreeList = RepeatedMessage.newEmptyInstance(AvatarSkillTreeOuterClass.AvatarSkillTree.getFactory());
 
     /**
-     * <code>repeated .DisplayRelicInfo relic_list = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree skilltree_list = 7;</code>
+     */
+    private final RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> skilltreeList = RepeatedMessage.newEmptyInstance(AvatarSkillTreeOuterClass.AvatarSkillTree.getFactory());
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayRelicInfo relic_list = 13;</code>
      */
     private final RepeatedMessage<DisplayRelicInfoOuterClass.DisplayRelicInfo> relicList = RepeatedMessage.newEmptyInstance(DisplayRelicInfoOuterClass.DisplayRelicInfo.getFactory());
 
@@ -91,136 +131,37 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 dressed_skin_id = 4;</code>
-     * @return whether the dressedSkinId field is set
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 1;</code>
+     * @return whether the avatarId field is set
      */
-    public boolean hasDressedSkinId() {
+    public boolean hasAvatarId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 dressed_skin_id = 4;</code>
-     * @return this
-     */
-    public DisplayAvatarDetailInfo clearDressedSkinId() {
-      bitField0_ &= ~0x00000001;
-      dressedSkinId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 dressed_skin_id = 4;</code>
-     * @return the dressedSkinId
-     */
-    public int getDressedSkinId() {
-      return dressedSkinId;
-    }
-
-    /**
-     * <code>optional uint32 dressed_skin_id = 4;</code>
-     * @param value the dressedSkinId to set
-     * @return this
-     */
-    public DisplayAvatarDetailInfo setDressedSkinId(final int value) {
-      bitField0_ |= 0x00000001;
-      dressedSkinId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 rank = 7;</code>
-     * @return whether the rank field is set
-     */
-    public boolean hasRank() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 rank = 7;</code>
-     * @return this
-     */
-    public DisplayAvatarDetailInfo clearRank() {
-      bitField0_ &= ~0x00000002;
-      rank = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 rank = 7;</code>
-     * @return the rank
-     */
-    public int getRank() {
-      return rank;
-    }
-
-    /**
-     * <code>optional uint32 rank = 7;</code>
-     * @param value the rank to set
-     * @return this
-     */
-    public DisplayAvatarDetailInfo setRank(final int value) {
-      bitField0_ |= 0x00000002;
-      rank = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 exp = 8;</code>
-     * @return whether the exp field is set
-     */
-    public boolean hasExp() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 exp = 8;</code>
-     * @return this
-     */
-    public DisplayAvatarDetailInfo clearExp() {
-      bitField0_ &= ~0x00000004;
-      exp = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 exp = 8;</code>
-     * @return the exp
-     */
-    public int getExp() {
-      return exp;
-    }
-
-    /**
-     * <code>optional uint32 exp = 8;</code>
-     * @param value the exp to set
-     * @return this
-     */
-    public DisplayAvatarDetailInfo setExp(final int value) {
-      bitField0_ |= 0x00000004;
-      exp = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 avatar_id = 9;</code>
-     * @return whether the avatarId field is set
-     */
-    public boolean hasAvatarId() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 1;</code>
      * @return this
      */
     public DisplayAvatarDetailInfo clearAvatarId() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000001;
       avatarId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 1;</code>
      * @return the avatarId
      */
     public int getAvatarId() {
@@ -228,73 +169,52 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 1;</code>
      * @param value the avatarId to set
      * @return this
      */
     public DisplayAvatarDetailInfo setAvatarId(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000001;
       avatarId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 level = 10;</code>
-     * @return whether the level field is set
-     */
-    public boolean hasLevel() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>optional uint32 level = 10;</code>
-     * @return this
-     */
-    public DisplayAvatarDetailInfo clearLevel() {
-      bitField0_ &= ~0x00000010;
-      level = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 level = 10;</code>
-     * @return the level
-     */
-    public int getLevel() {
-      return level;
-    }
-
-    /**
-     * <code>optional uint32 level = 10;</code>
-     * @param value the level to set
-     * @return this
-     */
-    public DisplayAvatarDetailInfo setLevel(final int value) {
-      bitField0_ |= 0x00000010;
-      level = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 pos = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 pos = 5;</code>
      * @return whether the pos field is set
      */
     public boolean hasPos() {
-      return (bitField0_ & 0x00000020) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 pos = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 pos = 5;</code>
      * @return this
      */
     public DisplayAvatarDetailInfo clearPos() {
-      bitField0_ &= ~0x00000020;
+      bitField0_ &= ~0x00000002;
       pos = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 pos = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 pos = 5;</code>
      * @return the pos
      */
     public int getPos() {
@@ -302,36 +222,52 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 pos = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 pos = 5;</code>
      * @param value the pos to set
      * @return this
      */
     public DisplayAvatarDetailInfo setPos(final int value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000002;
       pos = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 promotion = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 promotion = 6;</code>
      * @return whether the promotion field is set
      */
     public boolean hasPromotion() {
-      return (bitField0_ & 0x00000040) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 promotion = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 promotion = 6;</code>
      * @return this
      */
     public DisplayAvatarDetailInfo clearPromotion() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000004;
       promotion = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 promotion = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 promotion = 6;</code>
      * @return the promotion
      */
     public int getPromotion() {
@@ -339,18 +275,238 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 promotion = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 promotion = 6;</code>
      * @param value the promotion to set
      * @return this
      */
     public DisplayAvatarDetailInfo setPromotion(final int value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000004;
       promotion = value;
       return this;
     }
 
     /**
-     * <code>optional .DisplayEquipmentInfo equipment = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 level = 8;</code>
+     * @return whether the level field is set
+     */
+    public boolean hasLevel() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 level = 8;</code>
+     * @return this
+     */
+    public DisplayAvatarDetailInfo clearLevel() {
+      bitField0_ &= ~0x00000008;
+      level = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 level = 8;</code>
+     * @return the level
+     */
+    public int getLevel() {
+      return level;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 level = 8;</code>
+     * @param value the level to set
+     * @return this
+     */
+    public DisplayAvatarDetailInfo setLevel(final int value) {
+      bitField0_ |= 0x00000008;
+      level = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 rank = 10;</code>
+     * @return whether the rank field is set
+     */
+    public boolean hasRank() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 rank = 10;</code>
+     * @return this
+     */
+    public DisplayAvatarDetailInfo clearRank() {
+      bitField0_ &= ~0x00000010;
+      rank = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 rank = 10;</code>
+     * @return the rank
+     */
+    public int getRank() {
+      return rank;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 rank = 10;</code>
+     * @param value the rank to set
+     * @return this
+     */
+    public DisplayAvatarDetailInfo setRank(final int value) {
+      bitField0_ |= 0x00000010;
+      rank = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 exp = 12;</code>
+     * @return whether the exp field is set
+     */
+    public boolean hasExp() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 exp = 12;</code>
+     * @return this
+     */
+    public DisplayAvatarDetailInfo clearExp() {
+      bitField0_ &= ~0x00000020;
+      exp = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 exp = 12;</code>
+     * @return the exp
+     */
+    public int getExp() {
+      return exp;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 exp = 12;</code>
+     * @param value the exp to set
+     * @return this
+     */
+    public DisplayAvatarDetailInfo setExp(final int value) {
+      bitField0_ |= 0x00000020;
+      exp = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 dressed_skin_id = 14;</code>
+     * @return whether the dressedSkinId field is set
+     */
+    public boolean hasDressedSkinId() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 dressed_skin_id = 14;</code>
+     * @return this
+     */
+    public DisplayAvatarDetailInfo clearDressedSkinId() {
+      bitField0_ &= ~0x00000040;
+      dressedSkinId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 dressed_skin_id = 14;</code>
+     * @return the dressedSkinId
+     */
+    public int getDressedSkinId() {
+      return dressedSkinId;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 dressed_skin_id = 14;</code>
+     * @param value the dressedSkinId to set
+     * @return this
+     */
+    public DisplayAvatarDetailInfo setDressedSkinId(final int value) {
+      bitField0_ |= 0x00000040;
+      dressedSkinId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .DisplayEquipmentInfo equipment = 15;</code>
      * @return whether the equipment field is set
      */
     public boolean hasEquipment() {
@@ -358,7 +514,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .DisplayEquipmentInfo equipment = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .DisplayEquipmentInfo equipment = 15;</code>
      * @return this
      */
     public DisplayAvatarDetailInfo clearEquipment() {
@@ -368,7 +528,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .DisplayEquipmentInfo equipment = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .DisplayEquipmentInfo equipment = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -382,7 +546,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .DisplayEquipmentInfo equipment = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .DisplayEquipmentInfo equipment = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -396,7 +564,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .DisplayEquipmentInfo equipment = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .DisplayEquipmentInfo equipment = 15;</code>
      * @param value the equipment to set
      * @return this
      */
@@ -408,7 +580,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 1;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
      * @return whether the allPathUnlockedSpecialPointIdList field is set
      */
     public boolean hasAllPathUnlockedSpecialPointIdList() {
@@ -416,7 +588,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 1;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
      * @return this
      */
     public DisplayAvatarDetailInfo clearAllPathUnlockedSpecialPointIdList() {
@@ -426,7 +598,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 1;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -440,7 +612,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 1;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -454,7 +626,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 1;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
      * @param value the allPathUnlockedSpecialPointIdList to add
      * @return this
      */
@@ -465,7 +637,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 1;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
      * @param values the allPathUnlockedSpecialPointIdList to add
      * @return this
      */
@@ -476,81 +648,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated .AvatarSkillTree skilltree_list = 2;</code>
-     * @return whether the skilltreeList field is set
-     */
-    public boolean hasSkilltreeList() {
-      return (bitField0_ & 0x00000200) != 0;
-    }
-
-    /**
-     * <code>repeated .AvatarSkillTree skilltree_list = 2;</code>
-     * @return this
-     */
-    public DisplayAvatarDetailInfo clearSkilltreeList() {
-      bitField0_ &= ~0x00000200;
-      skilltreeList.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .AvatarSkillTree skilltree_list = 2;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableSkilltreeList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getSkilltreeList() {
-      return skilltreeList;
-    }
-
-    /**
-     * <code>repeated .AvatarSkillTree skilltree_list = 2;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableSkilltreeList() {
-      bitField0_ |= 0x00000200;
-      return skilltreeList;
-    }
-
-    /**
-     * <code>repeated .AvatarSkillTree skilltree_list = 2;</code>
-     * @param value the skilltreeList to add
-     * @return this
-     */
-    public DisplayAvatarDetailInfo addSkilltreeList(
-        final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
-      bitField0_ |= 0x00000200;
-      skilltreeList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .AvatarSkillTree skilltree_list = 2;</code>
-     * @param values the skilltreeList to add
-     * @return this
-     */
-    public DisplayAvatarDetailInfo addAllSkilltreeList(
-        final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
-      bitField0_ |= 0x00000200;
-      skilltreeList.addAll(values);
-      return this;
-    }
-
-    /**
      * <code>repeated .AvatarSkillTree all_path_special_skilltree_list = 3;</code>
      * @return whether the allPathSpecialSkilltreeList field is set
      */
     public boolean hasAllPathSpecialSkilltreeList() {
-      return (bitField0_ & 0x00000400) != 0;
+      return (bitField0_ & 0x00000200) != 0;
     }
 
     /**
@@ -558,7 +660,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
      * @return this
      */
     public DisplayAvatarDetailInfo clearAllPathSpecialSkilltreeList() {
-      bitField0_ &= ~0x00000400;
+      bitField0_ &= ~0x00000200;
       allPathSpecialSkilltreeList.clear();
       return this;
     }
@@ -589,7 +691,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
      */
     public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableAllPathSpecialSkilltreeList(
         ) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000200;
       return allPathSpecialSkilltreeList;
     }
 
@@ -600,7 +702,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
      */
     public DisplayAvatarDetailInfo addAllPathSpecialSkilltreeList(
         final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000200;
       allPathSpecialSkilltreeList.add(value);
       return this;
     }
@@ -612,13 +714,111 @@ public final class DisplayAvatarDetailInfoOuterClass {
      */
     public DisplayAvatarDetailInfo addAllAllPathSpecialSkilltreeList(
         final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
-      bitField0_ |= 0x00000400;
+      bitField0_ |= 0x00000200;
       allPathSpecialSkilltreeList.addAll(values);
       return this;
     }
 
     /**
-     * <code>repeated .DisplayRelicInfo relic_list = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree skilltree_list = 7;</code>
+     * @return whether the skilltreeList field is set
+     */
+    public boolean hasSkilltreeList() {
+      return (bitField0_ & 0x00000400) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree skilltree_list = 7;</code>
+     * @return this
+     */
+    public DisplayAvatarDetailInfo clearSkilltreeList() {
+      bitField0_ &= ~0x00000400;
+      skilltreeList.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree skilltree_list = 7;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableSkilltreeList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getSkilltreeList() {
+      return skilltreeList;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree skilltree_list = 7;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableSkilltreeList() {
+      bitField0_ |= 0x00000400;
+      return skilltreeList;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree skilltree_list = 7;</code>
+     * @param value the skilltreeList to add
+     * @return this
+     */
+    public DisplayAvatarDetailInfo addSkilltreeList(
+        final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
+      bitField0_ |= 0x00000400;
+      skilltreeList.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree skilltree_list = 7;</code>
+     * @param values the skilltreeList to add
+     * @return this
+     */
+    public DisplayAvatarDetailInfo addAllSkilltreeList(
+        final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
+      bitField0_ |= 0x00000400;
+      skilltreeList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayRelicInfo relic_list = 13;</code>
      * @return whether the relicList field is set
      */
     public boolean hasRelicList() {
@@ -626,7 +826,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayRelicInfo relic_list = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayRelicInfo relic_list = 13;</code>
      * @return this
      */
     public DisplayAvatarDetailInfo clearRelicList() {
@@ -636,7 +840,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayRelicInfo relic_list = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayRelicInfo relic_list = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -650,7 +858,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayRelicInfo relic_list = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayRelicInfo relic_list = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -664,7 +876,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayRelicInfo relic_list = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayRelicInfo relic_list = 13;</code>
      * @param value the relicList to add
      * @return this
      */
@@ -676,7 +892,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayRelicInfo relic_list = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayRelicInfo relic_list = 13;</code>
      * @param values the relicList to add
      * @return this
      */
@@ -692,17 +912,17 @@ public final class DisplayAvatarDetailInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        dressedSkinId = other.dressedSkinId;
-        rank = other.rank;
-        exp = other.exp;
         avatarId = other.avatarId;
-        level = other.level;
         pos = other.pos;
         promotion = other.promotion;
+        level = other.level;
+        rank = other.rank;
+        exp = other.exp;
+        dressedSkinId = other.dressedSkinId;
         equipment.copyFrom(other.equipment);
         allPathUnlockedSpecialPointIdList.copyFrom(other.allPathUnlockedSpecialPointIdList);
-        skilltreeList.copyFrom(other.skilltreeList);
         allPathSpecialSkilltreeList.copyFrom(other.allPathSpecialSkilltreeList);
+        skilltreeList.copyFrom(other.skilltreeList);
         relicList.copyFrom(other.relicList);
       }
       return this;
@@ -714,20 +934,8 @@ public final class DisplayAvatarDetailInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasDressedSkinId()) {
-        setDressedSkinId(other.dressedSkinId);
-      }
-      if (other.hasRank()) {
-        setRank(other.rank);
-      }
-      if (other.hasExp()) {
-        setExp(other.exp);
-      }
       if (other.hasAvatarId()) {
         setAvatarId(other.avatarId);
-      }
-      if (other.hasLevel()) {
-        setLevel(other.level);
       }
       if (other.hasPos()) {
         setPos(other.pos);
@@ -735,17 +943,29 @@ public final class DisplayAvatarDetailInfoOuterClass {
       if (other.hasPromotion()) {
         setPromotion(other.promotion);
       }
+      if (other.hasLevel()) {
+        setLevel(other.level);
+      }
+      if (other.hasRank()) {
+        setRank(other.rank);
+      }
+      if (other.hasExp()) {
+        setExp(other.exp);
+      }
+      if (other.hasDressedSkinId()) {
+        setDressedSkinId(other.dressedSkinId);
+      }
       if (other.hasEquipment()) {
         getMutableEquipment().mergeFrom(other.equipment);
       }
       if (other.hasAllPathUnlockedSpecialPointIdList()) {
         getMutableAllPathUnlockedSpecialPointIdList().addAll(other.allPathUnlockedSpecialPointIdList);
       }
-      if (other.hasSkilltreeList()) {
-        getMutableSkilltreeList().addAll(other.skilltreeList);
-      }
       if (other.hasAllPathSpecialSkilltreeList()) {
         getMutableAllPathSpecialSkilltreeList().addAll(other.allPathSpecialSkilltreeList);
+      }
+      if (other.hasSkilltreeList()) {
+        getMutableSkilltreeList().addAll(other.skilltreeList);
       }
       if (other.hasRelicList()) {
         getMutableRelicList().addAll(other.relicList);
@@ -760,17 +980,17 @@ public final class DisplayAvatarDetailInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      dressedSkinId = 0;
-      rank = 0;
-      exp = 0;
       avatarId = 0;
-      level = 0;
       pos = 0;
       promotion = 0;
+      level = 0;
+      rank = 0;
+      exp = 0;
+      dressedSkinId = 0;
       equipment.clear();
       allPathUnlockedSpecialPointIdList.clear();
-      skilltreeList.clear();
       allPathSpecialSkilltreeList.clear();
+      skilltreeList.clear();
       relicList.clear();
       return this;
     }
@@ -784,8 +1004,8 @@ public final class DisplayAvatarDetailInfoOuterClass {
       bitField0_ = 0;
       equipment.clearQuick();
       allPathUnlockedSpecialPointIdList.clear();
-      skilltreeList.clearQuick();
       allPathSpecialSkilltreeList.clearQuick();
+      skilltreeList.clearQuick();
       relicList.clearQuick();
       return this;
     }
@@ -800,75 +1020,75 @@ public final class DisplayAvatarDetailInfoOuterClass {
       }
       DisplayAvatarDetailInfo other = (DisplayAvatarDetailInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasDressedSkinId() || dressedSkinId == other.dressedSkinId)
-        && (!hasRank() || rank == other.rank)
-        && (!hasExp() || exp == other.exp)
         && (!hasAvatarId() || avatarId == other.avatarId)
-        && (!hasLevel() || level == other.level)
         && (!hasPos() || pos == other.pos)
         && (!hasPromotion() || promotion == other.promotion)
+        && (!hasLevel() || level == other.level)
+        && (!hasRank() || rank == other.rank)
+        && (!hasExp() || exp == other.exp)
+        && (!hasDressedSkinId() || dressedSkinId == other.dressedSkinId)
         && (!hasEquipment() || equipment.equals(other.equipment))
         && (!hasAllPathUnlockedSpecialPointIdList() || allPathUnlockedSpecialPointIdList.equals(other.allPathUnlockedSpecialPointIdList))
-        && (!hasSkilltreeList() || skilltreeList.equals(other.skilltreeList))
         && (!hasAllPathSpecialSkilltreeList() || allPathSpecialSkilltreeList.equals(other.allPathSpecialSkilltreeList))
+        && (!hasSkilltreeList() || skilltreeList.equals(other.skilltreeList))
         && (!hasRelicList() || relicList.equals(other.relicList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(dressedSkinId);
+        output.writeRawByte((byte) 8);
+        output.writeUInt32NoTag(avatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(rank);
+        output.writeRawByte((byte) 40);
+        output.writeUInt32NoTag(pos);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(exp);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(promotion);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(avatarId);
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(level);
+        output.writeUInt32NoTag(rank);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(pos);
+        output.writeUInt32NoTag(exp);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(promotion);
+        output.writeUInt32NoTag(dressedSkinId);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 122);
         output.writeMessageNoTag(equipment);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         for (int i = 0; i < allPathUnlockedSpecialPointIdList.length(); i++) {
-          output.writeRawByte((byte) 8);
+          output.writeRawByte((byte) 16);
           output.writeUInt32NoTag(allPathUnlockedSpecialPointIdList.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        for (int i = 0; i < skilltreeList.length(); i++) {
-          output.writeRawByte((byte) 18);
-          output.writeMessageNoTag(skilltreeList.get(i));
-        }
-      }
-      if ((bitField0_ & 0x00000400) != 0) {
         for (int i = 0; i < allPathSpecialSkilltreeList.length(); i++) {
           output.writeRawByte((byte) 26);
           output.writeMessageNoTag(allPathSpecialSkilltreeList.get(i));
         }
       }
+      if ((bitField0_ & 0x00000400) != 0) {
+        for (int i = 0; i < skilltreeList.length(); i++) {
+          output.writeRawByte((byte) 58);
+          output.writeMessageNoTag(skilltreeList.get(i));
+        }
+      }
       if ((bitField0_ & 0x00000800) != 0) {
         for (int i = 0; i < relicList.length(); i++) {
-          output.writeRawByte((byte) 90);
+          output.writeRawByte((byte) 106);
           output.writeMessageNoTag(relicList.get(i));
         }
       }
@@ -878,25 +1098,25 @@ public final class DisplayAvatarDetailInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(dressedSkinId);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(rank);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(exp);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(avatarId);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
-      }
-      if ((bitField0_ & 0x00000020) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(pos);
       }
-      if ((bitField0_ & 0x00000040) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(promotion);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rank);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(exp);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(dressedSkinId);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(equipment);
@@ -905,10 +1125,10 @@ public final class DisplayAvatarDetailInfoOuterClass {
         size += (1 * allPathUnlockedSpecialPointIdList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(allPathUnlockedSpecialPointIdList);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        size += (1 * skilltreeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(skilltreeList);
+        size += (1 * allPathSpecialSkilltreeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(allPathSpecialSkilltreeList);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        size += (1 * allPathSpecialSkilltreeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(allPathSpecialSkilltreeList);
+        size += (1 * skilltreeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(skilltreeList);
       }
       if ((bitField0_ & 0x00000800) != 0) {
         size += (1 * relicList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(relicList);
@@ -923,36 +1143,36 @@ public final class DisplayAvatarDetailInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
-            // dressedSkinId
-            dressedSkinId = input.readUInt32();
+          case 8: {
+            // avatarId
+            avatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 40) {
               break;
             }
           }
-          case 56: {
-            // rank
-            rank = input.readUInt32();
+          case 40: {
+            // pos
+            pos = input.readUInt32();
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 48) {
+              break;
+            }
+          }
+          case 48: {
+            // promotion
+            promotion = input.readUInt32();
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 64) {
               break;
             }
           }
           case 64: {
-            // exp
-            exp = input.readUInt32();
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 72) {
-              break;
-            }
-          }
-          case 72: {
-            // avatarId
-            avatarId = input.readUInt32();
+            // level
+            level = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 80) {
@@ -960,8 +1180,8 @@ public final class DisplayAvatarDetailInfoOuterClass {
             }
           }
           case 80: {
-            // level
-            level = input.readUInt32();
+            // rank
+            rank = input.readUInt32();
             bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 96) {
@@ -969,8 +1189,8 @@ public final class DisplayAvatarDetailInfoOuterClass {
             }
           }
           case 96: {
-            // pos
-            pos = input.readUInt32();
+            // exp
+            exp = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 112) {
@@ -978,36 +1198,28 @@ public final class DisplayAvatarDetailInfoOuterClass {
             }
           }
           case 112: {
-            // promotion
-            promotion = input.readUInt32();
+            // dressedSkinId
+            dressedSkinId = input.readUInt32();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 122) {
               break;
             }
           }
-          case 42: {
+          case 122: {
             // equipment
             input.readMessage(equipment);
             bitField0_ |= 0x00000080;
-            tag = input.readTag();
-            if (tag != 10) {
-              break;
-            }
-          }
-          case 10: {
-            // allPathUnlockedSpecialPointIdList [packed=true]
-            input.readPackedUInt32(allPathUnlockedSpecialPointIdList, tag);
-            bitField0_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 18) {
               break;
             }
           }
           case 18: {
-            // skilltreeList
-            tag = input.readRepeatedMessage(skilltreeList, tag);
-            bitField0_ |= 0x00000200;
+            // allPathUnlockedSpecialPointIdList [packed=true]
+            input.readPackedUInt32(allPathUnlockedSpecialPointIdList, tag);
+            bitField0_ |= 0x00000100;
+            tag = input.readTag();
             if (tag != 26) {
               break;
             }
@@ -1015,12 +1227,20 @@ public final class DisplayAvatarDetailInfoOuterClass {
           case 26: {
             // allPathSpecialSkilltreeList
             tag = input.readRepeatedMessage(allPathSpecialSkilltreeList, tag);
-            bitField0_ |= 0x00000400;
-            if (tag != 90) {
+            bitField0_ |= 0x00000200;
+            if (tag != 58) {
               break;
             }
           }
-          case 90: {
+          case 58: {
+            // skilltreeList
+            tag = input.readRepeatedMessage(skilltreeList, tag);
+            bitField0_ |= 0x00000400;
+            if (tag != 106) {
+              break;
+            }
+          }
+          case 106: {
             // relicList
             tag = input.readRepeatedMessage(relicList, tag);
             bitField0_ |= 0x00000800;
@@ -1038,7 +1258,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
             tag = input.readTag();
             break;
           }
-          case 8: {
+          case 16: {
             // allPathUnlockedSpecialPointIdList [packed=false]
             tag = input.readRepeatedUInt32(allPathUnlockedSpecialPointIdList, tag);
             bitField0_ |= 0x00000100;
@@ -1052,25 +1272,25 @@ public final class DisplayAvatarDetailInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.dressedSkinId, dressedSkinId);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.rank, rank);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.exp, exp);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.avatarId, avatarId);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.level, level);
-      }
-      if ((bitField0_ & 0x00000020) != 0) {
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.pos, pos);
       }
-      if ((bitField0_ & 0x00000040) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.promotion, promotion);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeUInt32(FieldNames.level, level);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeUInt32(FieldNames.rank, rank);
+      }
+      if ((bitField0_ & 0x00000020) != 0) {
+        output.writeUInt32(FieldNames.exp, exp);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        output.writeUInt32(FieldNames.dressedSkinId, dressedSkinId);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeMessage(FieldNames.equipment, equipment);
@@ -1079,10 +1299,10 @@ public final class DisplayAvatarDetailInfoOuterClass {
         output.writeRepeatedUInt32(FieldNames.allPathUnlockedSpecialPointIdList, allPathUnlockedSpecialPointIdList);
       }
       if ((bitField0_ & 0x00000200) != 0) {
-        output.writeRepeatedMessage(FieldNames.skilltreeList, skilltreeList);
+        output.writeRepeatedMessage(FieldNames.allPathSpecialSkilltreeList, allPathSpecialSkilltreeList);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeRepeatedMessage(FieldNames.allPathSpecialSkilltreeList, allPathSpecialSkilltreeList);
+        output.writeRepeatedMessage(FieldNames.skilltreeList, skilltreeList);
       }
       if ((bitField0_ & 0x00000800) != 0) {
         output.writeRepeatedMessage(FieldNames.relicList, relicList);
@@ -1097,57 +1317,12 @@ public final class DisplayAvatarDetailInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -407000018:
-          case 2012697844: {
-            if (input.isAtField(FieldNames.dressedSkinId)) {
-              if (!input.trySkipNullValue()) {
-                dressedSkinId = input.readUInt32();
-                bitField0_ |= 0x00000001;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 3492908: {
-            if (input.isAtField(FieldNames.rank)) {
-              if (!input.trySkipNullValue()) {
-                rank = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 100893: {
-            if (input.isAtField(FieldNames.exp)) {
-              if (!input.trySkipNullValue()) {
-                exp = input.readUInt32();
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case 1787287636:
           case -428636735: {
             if (input.isAtField(FieldNames.avatarId)) {
               if (!input.trySkipNullValue()) {
                 avatarId = input.readUInt32();
-                bitField0_ |= 0x00000008;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 102865796: {
-            if (input.isAtField(FieldNames.level)) {
-              if (!input.trySkipNullValue()) {
-                level = input.readUInt32();
-                bitField0_ |= 0x00000010;
+                bitField0_ |= 0x00000001;
               }
             } else {
               input.skipUnknownField();
@@ -1158,7 +1333,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
             if (input.isAtField(FieldNames.pos)) {
               if (!input.trySkipNullValue()) {
                 pos = input.readUInt32();
-                bitField0_ |= 0x00000020;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -1169,6 +1344,51 @@ public final class DisplayAvatarDetailInfoOuterClass {
             if (input.isAtField(FieldNames.promotion)) {
               if (!input.trySkipNullValue()) {
                 promotion = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 102865796: {
+            if (input.isAtField(FieldNames.level)) {
+              if (!input.trySkipNullValue()) {
+                level = input.readUInt32();
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 3492908: {
+            if (input.isAtField(FieldNames.rank)) {
+              if (!input.trySkipNullValue()) {
+                rank = input.readUInt32();
+                bitField0_ |= 0x00000010;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 100893: {
+            if (input.isAtField(FieldNames.exp)) {
+              if (!input.trySkipNullValue()) {
+                exp = input.readUInt32();
+                bitField0_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -407000018:
+          case 2012697844: {
+            if (input.isAtField(FieldNames.dressedSkinId)) {
+              if (!input.trySkipNullValue()) {
+                dressedSkinId = input.readUInt32();
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -1199,11 +1419,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
             }
             break;
           }
-          case 1549763245:
-          case 815647086: {
-            if (input.isAtField(FieldNames.skilltreeList)) {
+          case 1838433530:
+          case 1435588976: {
+            if (input.isAtField(FieldNames.allPathSpecialSkilltreeList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(skilltreeList);
+                input.readRepeatedMessage(allPathSpecialSkilltreeList);
                 bitField0_ |= 0x00000200;
               }
             } else {
@@ -1211,11 +1431,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
             }
             break;
           }
-          case 1838433530:
-          case 1435588976: {
-            if (input.isAtField(FieldNames.allPathSpecialSkilltreeList)) {
+          case 1549763245:
+          case 815647086: {
+            if (input.isAtField(FieldNames.skilltreeList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(allPathSpecialSkilltreeList);
+                input.readRepeatedMessage(skilltreeList);
                 bitField0_ |= 0x00000400;
               }
             } else {
@@ -1288,27 +1508,27 @@ public final class DisplayAvatarDetailInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName dressedSkinId = FieldName.forField("dressedSkinId", "dressed_skin_id");
-
-      static final FieldName rank = FieldName.forField("rank");
-
-      static final FieldName exp = FieldName.forField("exp");
-
       static final FieldName avatarId = FieldName.forField("avatarId", "avatar_id");
-
-      static final FieldName level = FieldName.forField("level");
 
       static final FieldName pos = FieldName.forField("pos");
 
       static final FieldName promotion = FieldName.forField("promotion");
 
+      static final FieldName level = FieldName.forField("level");
+
+      static final FieldName rank = FieldName.forField("rank");
+
+      static final FieldName exp = FieldName.forField("exp");
+
+      static final FieldName dressedSkinId = FieldName.forField("dressedSkinId", "dressed_skin_id");
+
       static final FieldName equipment = FieldName.forField("equipment");
 
       static final FieldName allPathUnlockedSpecialPointIdList = FieldName.forField("allPathUnlockedSpecialPointIdList", "all_path_unlocked_special_point_id_list");
 
-      static final FieldName skilltreeList = FieldName.forField("skilltreeList", "skilltree_list");
-
       static final FieldName allPathSpecialSkilltreeList = FieldName.forField("allPathSpecialSkilltreeList", "all_path_special_skilltree_list");
+
+      static final FieldName skilltreeList = FieldName.forField("skilltreeList", "skilltree_list");
 
       static final FieldName relicList = FieldName.forField("relicList", "relic_list");
     }

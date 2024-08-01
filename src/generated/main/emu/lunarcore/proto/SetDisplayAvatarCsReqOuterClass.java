@@ -20,7 +20,11 @@ public final class SetDisplayAvatarCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated .DisplayAvatar display_avatar_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayAvatar display_avatar_list = 10;</code>
      */
     private final RepeatedMessage<DisplayAvatarOuterClass.DisplayAvatar> displayAvatarList = RepeatedMessage.newEmptyInstance(DisplayAvatarOuterClass.DisplayAvatar.getFactory());
 
@@ -35,7 +39,11 @@ public final class SetDisplayAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayAvatar display_avatar_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayAvatar display_avatar_list = 10;</code>
      * @return whether the displayAvatarList field is set
      */
     public boolean hasDisplayAvatarList() {
@@ -43,7 +51,11 @@ public final class SetDisplayAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayAvatar display_avatar_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayAvatar display_avatar_list = 10;</code>
      * @return this
      */
     public SetDisplayAvatarCsReq clearDisplayAvatarList() {
@@ -53,7 +65,11 @@ public final class SetDisplayAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayAvatar display_avatar_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayAvatar display_avatar_list = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -67,7 +83,11 @@ public final class SetDisplayAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayAvatar display_avatar_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayAvatar display_avatar_list = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -81,7 +101,11 @@ public final class SetDisplayAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayAvatar display_avatar_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayAvatar display_avatar_list = 10;</code>
      * @param value the displayAvatarList to add
      * @return this
      */
@@ -93,7 +117,11 @@ public final class SetDisplayAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .DisplayAvatar display_avatar_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .DisplayAvatar display_avatar_list = 10;</code>
      * @param values the displayAvatarList to add
      * @return this
      */
@@ -165,7 +193,7 @@ public final class SetDisplayAvatarCsReqOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < displayAvatarList.length(); i++) {
-          output.writeRawByte((byte) 58);
+          output.writeRawByte((byte) 82);
           output.writeMessageNoTag(displayAvatarList.get(i));
         }
       }
@@ -187,7 +215,7 @@ public final class SetDisplayAvatarCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 58: {
+          case 82: {
             // displayAvatarList
             tag = input.readRepeatedMessage(displayAvatarList, tag);
             bitField0_ |= 0x00000001;

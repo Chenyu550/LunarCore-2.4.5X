@@ -20,6 +20,10 @@ public final class NewMailScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 mail_id_list = 10;</code>
      */
     private final RepeatedInt mailIdList = RepeatedInt.newEmptyInstance();
@@ -35,6 +39,10 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 mail_id_list = 10;</code>
      * @return whether the mailIdList field is set
      */
@@ -43,6 +51,10 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 mail_id_list = 10;</code>
      * @return this
      */
@@ -53,6 +65,10 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 mail_id_list = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -67,6 +83,10 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 mail_id_list = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -81,6 +101,10 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 mail_id_list = 10;</code>
      * @param value the mailIdList to add
      * @return this
@@ -92,6 +116,10 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 mail_id_list = 10;</code>
      * @param values the mailIdList to add
      * @return this

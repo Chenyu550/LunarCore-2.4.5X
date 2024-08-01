@@ -50,6 +50,10 @@ public final class PlayerBasicInfoOuterClass {
     private int scoin;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 world_level = 8;</code>
      */
     private int worldLevel;
@@ -292,6 +296,10 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 world_level = 8;</code>
      * @return whether the worldLevel field is set
      */
@@ -300,6 +308,10 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 world_level = 8;</code>
      * @return this
      */
@@ -310,6 +322,10 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 world_level = 8;</code>
      * @return the worldLevel
      */
@@ -318,6 +334,10 @@ public final class PlayerBasicInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 world_level = 8;</code>
      * @param value the worldLevel to set
      * @return this

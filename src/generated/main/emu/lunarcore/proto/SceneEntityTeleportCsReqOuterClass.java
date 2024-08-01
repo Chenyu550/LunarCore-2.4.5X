@@ -19,11 +19,19 @@ public final class SceneEntityTeleportCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 6;</code>
      */
     private int entryId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .EntityMotion entity_motion = 11;</code>
      */
     private final EntityMotionOuterClass.EntityMotion entityMotion = EntityMotionOuterClass.EntityMotion.newInstance();
@@ -39,7 +47,11 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 6;</code>
      * @return whether the entryId field is set
      */
     public boolean hasEntryId() {
@@ -47,7 +59,11 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 6;</code>
      * @return this
      */
     public SceneEntityTeleportCsReq clearEntryId() {
@@ -57,7 +73,11 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 6;</code>
      * @return the entryId
      */
     public int getEntryId() {
@@ -65,7 +85,11 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 6;</code>
      * @param value the entryId to set
      * @return this
      */
@@ -76,6 +100,10 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .EntityMotion entity_motion = 11;</code>
      * @return whether the entityMotion field is set
      */
@@ -84,6 +112,10 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .EntityMotion entity_motion = 11;</code>
      * @return this
      */
@@ -94,6 +126,10 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .EntityMotion entity_motion = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -108,6 +144,10 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .EntityMotion entity_motion = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -122,6 +162,10 @@ public final class SceneEntityTeleportCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .EntityMotion entity_motion = 11;</code>
      * @param value the entityMotion to set
      * @return this
@@ -199,7 +243,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(entryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -227,7 +271,7 @@ public final class SceneEntityTeleportCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 48: {
             // entryId
             entryId = input.readUInt32();
             bitField0_ |= 0x00000001;

@@ -20,12 +20,16 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 15;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 8;</code>
      */
     private final RepeatedMessage<FarmStageGachaInfoOuterClass.FarmStageGachaInfo> farmStageGachaInfoList = RepeatedMessage.newEmptyInstance(FarmStageGachaInfoOuterClass.FarmStageGachaInfo.getFactory());
 
@@ -40,7 +44,7 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -48,7 +52,7 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return this
      */
     public GetFarmStageGachaInfoScRsp clearRetcode() {
@@ -58,7 +62,7 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -66,7 +70,7 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 15;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -77,7 +81,11 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 8;</code>
      * @return whether the farmStageGachaInfoList field is set
      */
     public boolean hasFarmStageGachaInfoList() {
@@ -85,7 +93,11 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 8;</code>
      * @return this
      */
     public GetFarmStageGachaInfoScRsp clearFarmStageGachaInfoList() {
@@ -95,7 +107,11 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -110,7 +126,11 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -125,7 +145,11 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 8;</code>
      * @param value the farmStageGachaInfoList to add
      * @return this
      */
@@ -137,7 +161,11 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .FarmStageGachaInfo farm_stage_gacha_info_list = 8;</code>
      * @param values the farmStageGachaInfoList to add
      * @return this
      */
@@ -214,12 +242,12 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < farmStageGachaInfoList.length(); i++) {
-          output.writeRawByte((byte) 42);
+          output.writeRawByte((byte) 66);
           output.writeMessageNoTag(farmStageGachaInfoList.get(i));
         }
       }
@@ -244,16 +272,16 @@ public final class GetFarmStageGachaInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 120: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 66) {
               break;
             }
           }
-          case 42: {
+          case 66: {
             // farmStageGachaInfoList
             tag = input.readRepeatedMessage(farmStageGachaInfoList, tag);
             bitField0_ |= 0x00000002;

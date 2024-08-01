@@ -29,6 +29,10 @@ public final class DestroyItemCsReqOuterClass {
     private int curItemCount;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 item_id = 14;</code>
      */
     private int itemId;
@@ -118,6 +122,10 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 item_id = 14;</code>
      * @return whether the itemId field is set
      */
@@ -126,6 +134,10 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 item_id = 14;</code>
      * @return this
      */
@@ -136,6 +148,10 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 item_id = 14;</code>
      * @return the itemId
      */
@@ -144,6 +160,10 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 item_id = 14;</code>
      * @param value the itemId to set
      * @return this

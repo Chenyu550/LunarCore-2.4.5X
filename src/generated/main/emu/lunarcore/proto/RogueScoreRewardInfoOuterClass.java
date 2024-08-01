@@ -44,7 +44,7 @@ public final class RogueScoreRewardInfoOuterClass {
     private int score;
 
     /**
-     * <code>optional bool has_taken_initial_score = 7;</code>
+     * <code>optional bool has_taken_initial_score = 8;</code>
      */
     private boolean hasTakenInitialScore;
 
@@ -54,7 +54,11 @@ public final class RogueScoreRewardInfoOuterClass {
     private boolean poolRefreshed;
 
     /**
-     * <code>repeated uint32 has_taken_reward = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 has_taken_reward = 7;</code>
      */
     private final RepeatedInt hasTakenReward = RepeatedInt.newEmptyInstance();
 
@@ -233,7 +237,7 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>optional bool has_taken_initial_score = 7;</code>
+     * <code>optional bool has_taken_initial_score = 8;</code>
      * @return whether the hasTakenInitialScore field is set
      */
     public boolean hasHasTakenInitialScore() {
@@ -241,7 +245,7 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>optional bool has_taken_initial_score = 7;</code>
+     * <code>optional bool has_taken_initial_score = 8;</code>
      * @return this
      */
     public RogueScoreRewardInfo clearHasTakenInitialScore() {
@@ -251,7 +255,7 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>optional bool has_taken_initial_score = 7;</code>
+     * <code>optional bool has_taken_initial_score = 8;</code>
      * @return the hasTakenInitialScore
      */
     public boolean getHasTakenInitialScore() {
@@ -259,7 +263,7 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>optional bool has_taken_initial_score = 7;</code>
+     * <code>optional bool has_taken_initial_score = 8;</code>
      * @param value the hasTakenInitialScore to set
      * @return this
      */
@@ -307,7 +311,11 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 has_taken_reward = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 has_taken_reward = 7;</code>
      * @return whether the hasTakenReward field is set
      */
     public boolean hasHasTakenReward() {
@@ -315,7 +323,11 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 has_taken_reward = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 has_taken_reward = 7;</code>
      * @return this
      */
     public RogueScoreRewardInfo clearHasTakenReward() {
@@ -325,7 +337,11 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 has_taken_reward = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 has_taken_reward = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -339,7 +355,11 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 has_taken_reward = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 has_taken_reward = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -353,7 +373,11 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 has_taken_reward = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 has_taken_reward = 7;</code>
      * @param value the hasTakenReward to add
      * @return this
      */
@@ -364,7 +388,11 @@ public final class RogueScoreRewardInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 has_taken_reward = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 has_taken_reward = 7;</code>
      * @param values the hasTakenReward to add
      * @return this
      */
@@ -486,7 +514,7 @@ public final class RogueScoreRewardInfoOuterClass {
         output.writeUInt32NoTag(score);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 64);
         output.writeBoolNoTag(hasTakenInitialScore);
       }
       if ((bitField0_ & 0x00000020) != 0) {
@@ -495,7 +523,7 @@ public final class RogueScoreRewardInfoOuterClass {
       }
       if ((bitField0_ & 0x00000040) != 0) {
         for (int i = 0; i < hasTakenReward.length(); i++) {
-          output.writeRawByte((byte) 104);
+          output.writeRawByte((byte) 56);
           output.writeUInt32NoTag(hasTakenReward.array()[i]);
         }
       }
@@ -567,11 +595,11 @@ public final class RogueScoreRewardInfoOuterClass {
             score = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 64) {
               break;
             }
           }
-          case 56: {
+          case 64: {
             // hasTakenInitialScore
             hasTakenInitialScore = input.readBool();
             bitField0_ |= 0x00000010;
@@ -585,11 +613,11 @@ public final class RogueScoreRewardInfoOuterClass {
             poolRefreshed = input.readBool();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 58) {
               break;
             }
           }
-          case 106: {
+          case 58: {
             // hasTakenReward [packed=true]
             input.readPackedUInt32(hasTakenReward, tag);
             bitField0_ |= 0x00000040;
@@ -608,7 +636,7 @@ public final class RogueScoreRewardInfoOuterClass {
             tag = input.readTag();
             break;
           }
-          case 104: {
+          case 56: {
             // hasTakenReward [packed=false]
             tag = input.readRepeatedUInt32(hasTakenReward, tag);
             bitField0_ |= 0x00000040;

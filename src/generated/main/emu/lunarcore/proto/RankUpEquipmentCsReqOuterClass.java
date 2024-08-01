@@ -24,6 +24,10 @@ public final class RankUpEquipmentCsReqOuterClass {
     private int equipmentUniqueId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ItemCostList item_cost_list = 4;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
@@ -76,6 +80,10 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ItemCostList item_cost_list = 4;</code>
      * @return whether the itemCostList field is set
      */
@@ -84,6 +92,10 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ItemCostList item_cost_list = 4;</code>
      * @return this
      */
@@ -94,6 +106,10 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ItemCostList item_cost_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -108,6 +124,10 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ItemCostList item_cost_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -122,6 +142,10 @@ public final class RankUpEquipmentCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ItemCostList item_cost_list = 4;</code>
      * @param value the itemCostList to set
      * @return this

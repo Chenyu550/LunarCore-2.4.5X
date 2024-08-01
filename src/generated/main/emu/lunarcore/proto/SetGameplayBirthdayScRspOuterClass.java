@@ -19,14 +19,22 @@ public final class SetGameplayBirthdayScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
-     */
-    private int retcode;
-
-    /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 birthday = 11;</code>
      */
     private int birthday;
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 13;</code>
+     */
+    private int retcode;
 
     private SetGameplayBirthdayScRsp() {
     }
@@ -39,61 +47,36 @@ public final class SetGameplayBirthdayScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
-     * @return whether the retcode field is set
-     */
-    public boolean hasRetcode() {
-      return (bitField0_ & 0x00000001) != 0;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 6;</code>
-     * @return this
-     */
-    public SetGameplayBirthdayScRsp clearRetcode() {
-      bitField0_ &= ~0x00000001;
-      retcode = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 6;</code>
-     * @return the retcode
-     */
-    public int getRetcode() {
-      return retcode;
-    }
-
-    /**
-     * <code>optional uint32 retcode = 6;</code>
-     * @param value the retcode to set
-     * @return this
-     */
-    public SetGameplayBirthdayScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000001;
-      retcode = value;
-      return this;
-    }
-
-    /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 birthday = 11;</code>
      * @return whether the birthday field is set
      */
     public boolean hasBirthday() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 birthday = 11;</code>
      * @return this
      */
     public SetGameplayBirthdayScRsp clearBirthday() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       birthday = 0;
       return this;
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 birthday = 11;</code>
      * @return the birthday
      */
@@ -102,13 +85,70 @@ public final class SetGameplayBirthdayScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 birthday = 11;</code>
      * @param value the birthday to set
      * @return this
      */
     public SetGameplayBirthdayScRsp setBirthday(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       birthday = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 13;</code>
+     * @return whether the retcode field is set
+     */
+    public boolean hasRetcode() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 13;</code>
+     * @return this
+     */
+    public SetGameplayBirthdayScRsp clearRetcode() {
+      bitField0_ &= ~0x00000002;
+      retcode = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 13;</code>
+     * @return the retcode
+     */
+    public int getRetcode() {
+      return retcode;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 13;</code>
+     * @param value the retcode to set
+     * @return this
+     */
+    public SetGameplayBirthdayScRsp setRetcode(final int value) {
+      bitField0_ |= 0x00000002;
+      retcode = value;
       return this;
     }
 
@@ -117,8 +157,8 @@ public final class SetGameplayBirthdayScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        retcode = other.retcode;
         birthday = other.birthday;
+        retcode = other.retcode;
       }
       return this;
     }
@@ -129,11 +169,11 @@ public final class SetGameplayBirthdayScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRetcode()) {
-        setRetcode(other.retcode);
-      }
       if (other.hasBirthday()) {
         setBirthday(other.birthday);
+      }
+      if (other.hasRetcode()) {
+        setRetcode(other.retcode);
       }
       return this;
     }
@@ -145,8 +185,8 @@ public final class SetGameplayBirthdayScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      retcode = 0;
       birthday = 0;
+      retcode = 0;
       return this;
     }
 
@@ -170,19 +210,19 @@ public final class SetGameplayBirthdayScRspOuterClass {
       }
       SetGameplayBirthdayScRsp other = (SetGameplayBirthdayScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasRetcode() || retcode == other.retcode)
-        && (!hasBirthday() || birthday == other.birthday);
+        && (!hasBirthday() || birthday == other.birthday)
+        && (!hasRetcode() || retcode == other.retcode);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(retcode);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(birthday);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(retcode);
       }
     }
 
@@ -190,10 +230,10 @@ public final class SetGameplayBirthdayScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(birthday);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(birthday);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       return size;
     }
@@ -205,18 +245,18 @@ public final class SetGameplayBirthdayScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
-            // retcode
-            retcode = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 88) {
-              break;
-            }
-          }
           case 88: {
             // birthday
             birthday = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 104) {
+              break;
+            }
+          }
+          case 104: {
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -241,10 +281,10 @@ public final class SetGameplayBirthdayScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.birthday, birthday);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.birthday, birthday);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       output.endObject();
     }
@@ -256,10 +296,10 @@ public final class SetGameplayBirthdayScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case 1069376125: {
+            if (input.isAtField(FieldNames.birthday)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                birthday = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -267,10 +307,10 @@ public final class SetGameplayBirthdayScRspOuterClass {
             }
             break;
           }
-          case 1069376125: {
-            if (input.isAtField(FieldNames.birthday)) {
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                birthday = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -331,9 +371,9 @@ public final class SetGameplayBirthdayScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName retcode = FieldName.forField("retcode");
-
       static final FieldName birthday = FieldName.forField("birthday");
+
+      static final FieldName retcode = FieldName.forField("retcode");
     }
   }
 }

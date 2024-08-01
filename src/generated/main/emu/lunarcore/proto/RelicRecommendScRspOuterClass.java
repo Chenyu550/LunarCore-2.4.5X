@@ -19,12 +19,20 @@ public final class RelicRecommendScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 10;</code>
      */
     private int avatarId;
 
@@ -39,7 +47,11 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 8;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +59,11 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
     public RelicRecommendScRsp clearRetcode() {
@@ -57,7 +73,11 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +85,11 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 10;</code>
      * @return whether the avatarId field is set
      */
     public boolean hasAvatarId() {
@@ -84,7 +112,11 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 10;</code>
      * @return this
      */
     public RelicRecommendScRsp clearAvatarId() {
@@ -94,7 +126,11 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 10;</code>
      * @return the avatarId
      */
     public int getAvatarId() {
@@ -102,7 +138,11 @@ public final class RelicRecommendScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 11;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 10;</code>
      * @param value the avatarId to set
      * @return this
      */
@@ -177,11 +217,11 @@ public final class RelicRecommendScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(avatarId);
       }
     }
@@ -205,16 +245,16 @@ public final class RelicRecommendScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 64: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 80) {
               break;
             }
           }
-          case 88: {
+          case 80: {
             // avatarId
             avatarId = input.readUInt32();
             bitField0_ |= 0x00000002;

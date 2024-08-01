@@ -30,6 +30,10 @@ public final class BattleRelicOuterClass {
     private int level;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      */
     private int mainAffixId;
@@ -129,6 +133,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      * @return whether the mainAffixId field is set
      */
@@ -137,6 +145,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      * @return this
      */
@@ -147,6 +159,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      * @return the mainAffixId
      */
@@ -155,6 +171,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 main_affix_id = 3;</code>
      * @param value the mainAffixId to set
      * @return this

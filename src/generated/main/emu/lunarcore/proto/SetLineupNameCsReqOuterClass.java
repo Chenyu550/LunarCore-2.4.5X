@@ -20,12 +20,20 @@ public final class SetLineupNameCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 index = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 index = 11;</code>
      */
     private int index;
 
     /**
-     * <code>optional string name = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional string name = 9;</code>
      */
     private final Utf8String name = Utf8String.newEmptyInstance();
 
@@ -40,7 +48,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 index = 11;</code>
      * @return whether the index field is set
      */
     public boolean hasIndex() {
@@ -48,7 +60,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 index = 11;</code>
      * @return this
      */
     public SetLineupNameCsReq clearIndex() {
@@ -58,7 +74,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 index = 11;</code>
      * @return the index
      */
     public int getIndex() {
@@ -66,7 +86,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 index = 11;</code>
      * @param value the index to set
      * @return this
      */
@@ -77,7 +101,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string name = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional string name = 9;</code>
      * @return whether the name field is set
      */
     public boolean hasName() {
@@ -85,7 +113,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string name = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional string name = 9;</code>
      * @return this
      */
     public SetLineupNameCsReq clearName() {
@@ -95,7 +127,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string name = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional string name = 9;</code>
      * @return the name
      */
     public String getName() {
@@ -103,7 +139,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string name = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional string name = 9;</code>
      * @return internal {@code Utf8String} representation of name for reading
      */
     public Utf8String getNameBytes() {
@@ -111,7 +151,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string name = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional string name = 9;</code>
      * @return internal {@code Utf8String} representation of name for modifications
      */
     public Utf8String getMutableNameBytes() {
@@ -120,7 +164,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string name = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional string name = 9;</code>
      * @param value the name to set
      * @return this
      */
@@ -131,7 +179,11 @@ public final class SetLineupNameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string name = 2;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional string name = 9;</code>
      * @param value the name to set
      * @return this
      */
@@ -207,11 +259,11 @@ public final class SetLineupNameCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(index);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 18);
+        output.writeRawByte((byte) 74);
         output.writeStringNoTag(name);
       }
     }
@@ -235,16 +287,16 @@ public final class SetLineupNameCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 88: {
             // index
             index = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 74) {
               break;
             }
           }
-          case 18: {
+          case 74: {
             // name
             input.readString(name);
             bitField0_ |= 0x00000002;

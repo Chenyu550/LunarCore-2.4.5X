@@ -20,16 +20,24 @@ public final class SetAssistAvatarScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 2;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 11;</code>
      */
     private int avatarId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 avatar_id_list = 7;</code>
      */
     private final RepeatedInt avatarIdList = RepeatedInt.newEmptyInstance();
@@ -45,7 +53,7 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -53,7 +61,7 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return this
      */
     public SetAssistAvatarScRsp clearRetcode() {
@@ -63,7 +71,7 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -71,7 +79,7 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 3;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -82,7 +90,11 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 11;</code>
      * @return whether the avatarId field is set
      */
     public boolean hasAvatarId() {
@@ -90,7 +102,11 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 11;</code>
      * @return this
      */
     public SetAssistAvatarScRsp clearAvatarId() {
@@ -100,7 +116,11 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 11;</code>
      * @return the avatarId
      */
     public int getAvatarId() {
@@ -108,7 +128,11 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 avatar_id = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 avatar_id = 11;</code>
      * @param value the avatarId to set
      * @return this
      */
@@ -119,6 +143,10 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 avatar_id_list = 7;</code>
      * @return whether the avatarIdList field is set
      */
@@ -127,6 +155,10 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 avatar_id_list = 7;</code>
      * @return this
      */
@@ -137,6 +169,10 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 avatar_id_list = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -151,6 +187,10 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 avatar_id_list = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -165,6 +205,10 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 avatar_id_list = 7;</code>
      * @param value the avatarIdList to add
      * @return this
@@ -176,6 +220,10 @@ public final class SetAssistAvatarScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated uint32 avatar_id_list = 7;</code>
      * @param values the avatarIdList to add
      * @return this
@@ -258,11 +306,11 @@ public final class SetAssistAvatarScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(avatarId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -295,16 +343,16 @@ public final class SetAssistAvatarScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 16: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 88) {
               break;
             }
           }
-          case 72: {
+          case 88: {
             // avatarId
             avatarId = input.readUInt32();
             bitField0_ |= 0x00000002;

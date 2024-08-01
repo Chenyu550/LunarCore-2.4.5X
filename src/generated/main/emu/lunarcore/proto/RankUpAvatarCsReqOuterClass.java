@@ -28,6 +28,10 @@ public final class RankUpAvatarCsReqOuterClass {
     private int equipAvatarId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 rank = 13;</code>
      */
     private int rank;
@@ -101,6 +105,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 rank = 13;</code>
      * @return whether the rank field is set
      */
@@ -109,6 +117,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 rank = 13;</code>
      * @return this
      */
@@ -119,6 +131,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 rank = 13;</code>
      * @return the rank
      */
@@ -127,6 +143,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 rank = 13;</code>
      * @param value the rank to set
      * @return this

@@ -68,9 +68,9 @@ public class LunarCore {
 
     public static void main(String[] args) {
         // Start Server
-        LunarCore.getLogger().info("Starting Lunar Core " + getJarVersion());
+        LunarCore.getLogger().info("正在启动 Lunar Core " + getJarVersion());
         LunarCore.getLogger().info("Git hash: " + getGitHash());
-        LunarCore.getLogger().info("Game version: " + GameConstants.VERSION);
+        LunarCore.getLogger().info("游戏版本: " + GameConstants.VERSION);
         boolean generateHandbook = true;
 
         // Load commands
@@ -82,7 +82,7 @@ public class LunarCore {
         try {
             LunarCore.getPluginManager().loadPlugins();
         } catch (Exception exception) {
-            LunarCore.getLogger().error("Unable to load plugins.", exception);
+            LunarCore.getLogger().error("无法加载插件.", exception);
         }
         
         // Load hotfix data
@@ -126,7 +126,7 @@ public class LunarCore {
             // Start Database(s)
             LunarCore.initDatabases();
         } catch (Exception exception) {
-            LunarCore.getLogger().error("Unable to start the database(s).", exception);
+            LunarCore.getLogger().error("无法启动数据库.", exception);
         }
 
         try {
@@ -134,7 +134,7 @@ public class LunarCore {
             httpServer = new HttpServer(serverType);
             httpServer.start();
         } catch (Exception exception) {
-            LunarCore.getLogger().error("Unable to start the HTTP server.", exception);
+            LunarCore.getLogger().error("无法启动 HTTP 服务器.", exception);
         }
 
         // Start game server
@@ -142,7 +142,7 @@ public class LunarCore {
             gameServer = new GameServer(getConfig().getGameServer());
             gameServer.start();
         } catch (Exception exception) {
-            LunarCore.getLogger().error("Unable to start the game server.", exception);
+            LunarCore.getLogger().error("无法启动游戏服务器.", exception);
         }
         
         // Hook into shutdown event
@@ -214,7 +214,7 @@ public class LunarCore {
             
             file.write(gson.toJson(config));
         } catch (Exception e) {
-            getLogger().error("Config save error");
+            getLogger().error("配置保存错误");
         }
     }
     

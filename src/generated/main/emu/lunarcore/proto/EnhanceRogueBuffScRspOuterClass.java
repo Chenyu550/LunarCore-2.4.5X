@@ -19,6 +19,10 @@ public final class EnhanceRogueBuffScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
@@ -44,6 +48,10 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 8;</code>
      * @return whether the retcode field is set
      */
@@ -52,6 +60,10 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
@@ -62,6 +74,10 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
@@ -70,6 +86,10 @@ public final class EnhanceRogueBuffScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this

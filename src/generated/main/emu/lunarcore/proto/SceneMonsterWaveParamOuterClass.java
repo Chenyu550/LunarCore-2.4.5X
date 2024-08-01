@@ -19,7 +19,11 @@ public final class SceneMonsterWaveParamOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 level = 5;</code>
      */
     private int level;
 
@@ -34,7 +38,11 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 level = 5;</code>
      * @return whether the level field is set
      */
     public boolean hasLevel() {
@@ -42,7 +50,11 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 level = 5;</code>
      * @return this
      */
     public SceneMonsterWaveParam clearLevel() {
@@ -52,7 +64,11 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 level = 5;</code>
      * @return the level
      */
     public int getLevel() {
@@ -60,7 +76,11 @@ public final class SceneMonsterWaveParamOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 level = 5;</code>
      * @param value the level to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class SceneMonsterWaveParamOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(level);
       }
     }
@@ -150,7 +170,7 @@ public final class SceneMonsterWaveParamOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 40: {
             // level
             level = input.readUInt32();
             bitField0_ |= 0x00000001;

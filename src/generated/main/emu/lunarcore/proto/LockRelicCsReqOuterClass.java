@@ -24,6 +24,10 @@ public final class LockRelicCsReqOuterClass {
     private int relicUniqueId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional bool is_protected = 4;</code>
      */
     private boolean isProtected;
@@ -76,6 +80,10 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional bool is_protected = 4;</code>
      * @return whether the isProtected field is set
      */
@@ -84,6 +92,10 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional bool is_protected = 4;</code>
      * @return this
      */
@@ -94,6 +106,10 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional bool is_protected = 4;</code>
      * @return the isProtected
      */
@@ -102,6 +118,10 @@ public final class LockRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional bool is_protected = 4;</code>
      * @param value the isProtected to set
      * @return this

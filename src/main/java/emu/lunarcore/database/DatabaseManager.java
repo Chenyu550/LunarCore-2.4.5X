@@ -51,7 +51,7 @@ public final class DatabaseManager {
         // Local mongo server
         if (info.isUseInternal() && Utils.isPortOpen(internalConfig.getAddress(), internalConfig.getPort())) {
             connectionString = startInternalMongoServer(internalConfig);
-            LunarCore.getLogger().info("Started local MongoDB server at " + server.getConnectionString());
+            LunarCore.getLogger().info("成功在 " + server.getConnectionString()+ " 启动了本地 MongoDB 服务器");
         }
 
         // Initialize

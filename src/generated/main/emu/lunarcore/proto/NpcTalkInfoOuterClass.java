@@ -19,7 +19,11 @@ public final class NpcTalkInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 npc_talk_id = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 npc_talk_id = 13;</code>
      */
     private int npcTalkId;
 
@@ -34,7 +38,11 @@ public final class NpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_talk_id = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 npc_talk_id = 13;</code>
      * @return whether the npcTalkId field is set
      */
     public boolean hasNpcTalkId() {
@@ -42,7 +50,11 @@ public final class NpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_talk_id = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 npc_talk_id = 13;</code>
      * @return this
      */
     public NpcTalkInfo clearNpcTalkId() {
@@ -52,7 +64,11 @@ public final class NpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_talk_id = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 npc_talk_id = 13;</code>
      * @return the npcTalkId
      */
     public int getNpcTalkId() {
@@ -60,7 +76,11 @@ public final class NpcTalkInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 npc_talk_id = 3;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 npc_talk_id = 13;</code>
      * @param value the npcTalkId to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class NpcTalkInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(npcTalkId);
       }
     }
@@ -150,7 +170,7 @@ public final class NpcTalkInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 104: {
             // npcTalkId
             npcTalkId = input.readUInt32();
             bitField0_ |= 0x00000001;

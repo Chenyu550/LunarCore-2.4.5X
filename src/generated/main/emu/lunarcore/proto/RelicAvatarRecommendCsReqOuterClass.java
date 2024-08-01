@@ -19,7 +19,11 @@ public final class RelicAvatarRecommendCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 set_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 set_id = 1;</code>
      */
     private int setId;
 
@@ -34,7 +38,11 @@ public final class RelicAvatarRecommendCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 set_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 set_id = 1;</code>
      * @return whether the setId field is set
      */
     public boolean hasSetId() {
@@ -42,7 +50,11 @@ public final class RelicAvatarRecommendCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 set_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 set_id = 1;</code>
      * @return this
      */
     public RelicAvatarRecommendCsReq clearSetId() {
@@ -52,7 +64,11 @@ public final class RelicAvatarRecommendCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 set_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 set_id = 1;</code>
      * @return the setId
      */
     public int getSetId() {
@@ -60,7 +76,11 @@ public final class RelicAvatarRecommendCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 set_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 set_id = 1;</code>
      * @param value the setId to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class RelicAvatarRecommendCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(setId);
       }
     }
@@ -150,7 +170,7 @@ public final class RelicAvatarRecommendCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 8: {
             // setId
             setId = input.readUInt32();
             bitField0_ |= 0x00000001;

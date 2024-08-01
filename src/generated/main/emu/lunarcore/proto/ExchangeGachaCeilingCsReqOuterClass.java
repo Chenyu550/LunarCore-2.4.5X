@@ -19,6 +19,10 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 avatar_id = 11;</code>
      */
     private int avatarId;
@@ -39,6 +43,10 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 avatar_id = 11;</code>
      * @return whether the avatarId field is set
      */
@@ -47,6 +55,10 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 avatar_id = 11;</code>
      * @return this
      */
@@ -57,6 +69,10 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 avatar_id = 11;</code>
      * @return the avatarId
      */
@@ -65,6 +81,10 @@ public final class ExchangeGachaCeilingCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 avatar_id = 11;</code>
      * @param value the avatarId to set
      * @return this

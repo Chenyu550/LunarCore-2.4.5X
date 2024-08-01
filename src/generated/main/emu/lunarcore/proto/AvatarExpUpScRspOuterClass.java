@@ -20,12 +20,20 @@ public final class AvatarExpUpScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 12;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .PileItem return_item_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .PileItem return_item_list = 11;</code>
      */
     private final RepeatedMessage<PileItemOuterClass.PileItem> returnItemList = RepeatedMessage.newEmptyInstance(PileItemOuterClass.PileItem.getFactory());
 
@@ -40,7 +48,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 12;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -48,7 +60,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 12;</code>
      * @return this
      */
     public AvatarExpUpScRsp clearRetcode() {
@@ -58,7 +74,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 12;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -66,7 +86,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 12;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -77,7 +101,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>repeated .PileItem return_item_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .PileItem return_item_list = 11;</code>
      * @return whether the returnItemList field is set
      */
     public boolean hasReturnItemList() {
@@ -85,7 +113,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>repeated .PileItem return_item_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .PileItem return_item_list = 11;</code>
      * @return this
      */
     public AvatarExpUpScRsp clearReturnItemList() {
@@ -95,7 +127,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>repeated .PileItem return_item_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .PileItem return_item_list = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -109,7 +145,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>repeated .PileItem return_item_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .PileItem return_item_list = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,7 +163,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>repeated .PileItem return_item_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .PileItem return_item_list = 11;</code>
      * @param value the returnItemList to add
      * @return this
      */
@@ -134,7 +178,11 @@ public final class AvatarExpUpScRspOuterClass {
     }
 
     /**
-     * <code>repeated .PileItem return_item_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .PileItem return_item_list = 11;</code>
      * @param values the returnItemList to add
      * @return this
      */
@@ -210,12 +258,12 @@ public final class AvatarExpUpScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < returnItemList.length(); i++) {
-          output.writeRawByte((byte) 98);
+          output.writeRawByte((byte) 90);
           output.writeMessageNoTag(returnItemList.get(i));
         }
       }
@@ -240,16 +288,16 @@ public final class AvatarExpUpScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 72: {
+          case 96: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 90) {
               break;
             }
           }
-          case 98: {
+          case 90: {
             // returnItemList
             tag = input.readRepeatedMessage(returnItemList, tag);
             bitField0_ |= 0x00000002;

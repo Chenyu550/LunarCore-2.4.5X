@@ -19,7 +19,11 @@ public final class SceneEnterStageCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 stage_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 14;</code>
      */
     private int stageId;
 
@@ -34,7 +38,11 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 14;</code>
      * @return whether the stageId field is set
      */
     public boolean hasStageId() {
@@ -42,7 +50,11 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 14;</code>
      * @return this
      */
     public SceneEnterStageCsReq clearStageId() {
@@ -52,7 +64,11 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 14;</code>
      * @return the stageId
      */
     public int getStageId() {
@@ -60,7 +76,11 @@ public final class SceneEnterStageCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 stage_id = 4;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 stage_id = 14;</code>
      * @param value the stageId to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class SceneEnterStageCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(stageId);
       }
     }
@@ -150,7 +170,7 @@ public final class SceneEnterStageCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 112: {
             // stageId
             stageId = input.readUInt32();
             bitField0_ |= 0x00000001;

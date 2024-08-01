@@ -19,6 +19,10 @@ public final class FinishRogueDialogueGroupCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  
+     * </pre>
+     *
      * <code>optional uint32 dialogue_group_id = 10;</code>
      */
     private int dialogueGroupId;
@@ -39,6 +43,10 @@ public final class FinishRogueDialogueGroupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  
+     * </pre>
+     *
      * <code>optional uint32 dialogue_group_id = 10;</code>
      * @return whether the dialogueGroupId field is set
      */
@@ -47,6 +55,10 @@ public final class FinishRogueDialogueGroupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  
+     * </pre>
+     *
      * <code>optional uint32 dialogue_group_id = 10;</code>
      * @return this
      */
@@ -57,6 +69,10 @@ public final class FinishRogueDialogueGroupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  
+     * </pre>
+     *
      * <code>optional uint32 dialogue_group_id = 10;</code>
      * @return the dialogueGroupId
      */
@@ -65,6 +81,10 @@ public final class FinishRogueDialogueGroupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *  
+     * </pre>
+     *
      * <code>optional uint32 dialogue_group_id = 10;</code>
      * @param value the dialogueGroupId to set
      * @return this

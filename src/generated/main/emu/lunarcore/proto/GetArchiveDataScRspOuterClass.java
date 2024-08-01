@@ -19,12 +19,20 @@ public final class GetArchiveDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 7;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .ArchiveData archive_data = 1;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ArchiveData archive_data = 3;</code>
      */
     private final ArchiveDataOuterClass.ArchiveData archiveData = ArchiveDataOuterClass.ArchiveData.newInstance();
 
@@ -39,6 +47,10 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 7;</code>
      * @return whether the retcode field is set
      */
@@ -47,6 +59,10 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 7;</code>
      * @return this
      */
@@ -57,6 +73,10 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 7;</code>
      * @return the retcode
      */
@@ -65,6 +85,10 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 7;</code>
      * @param value the retcode to set
      * @return this
@@ -76,7 +100,11 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .ArchiveData archive_data = 1;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ArchiveData archive_data = 3;</code>
      * @return whether the archiveData field is set
      */
     public boolean hasArchiveData() {
@@ -84,7 +112,11 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .ArchiveData archive_data = 1;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ArchiveData archive_data = 3;</code>
      * @return this
      */
     public GetArchiveDataScRsp clearArchiveData() {
@@ -94,7 +126,11 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .ArchiveData archive_data = 1;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ArchiveData archive_data = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +144,11 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .ArchiveData archive_data = 1;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ArchiveData archive_data = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +162,11 @@ public final class GetArchiveDataScRspOuterClass {
     }
 
     /**
-     * <code>optional .ArchiveData archive_data = 1;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ArchiveData archive_data = 3;</code>
      * @param value the archiveData to set
      * @return this
      */
@@ -202,7 +246,7 @@ public final class GetArchiveDataScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 10);
+        output.writeRawByte((byte) 26);
         output.writeMessageNoTag(archiveData);
       }
     }
@@ -231,11 +275,11 @@ public final class GetArchiveDataScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 10) {
+            if (tag != 26) {
               break;
             }
           }
-          case 10: {
+          case 26: {
             // archiveData
             input.readMessage(archiveData);
             bitField0_ |= 0x00000002;
