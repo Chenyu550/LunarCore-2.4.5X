@@ -28,12 +28,20 @@ public final class InteractChargerScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>optional .ChargerInfo charger_info = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ChargerInfo charger_info = 1;</code>
      */
     private final ChargerInfoOuterClass.ChargerInfo chargerInfo = ChargerInfoOuterClass.ChargerInfo.newInstance();
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 8;</code>
      */
     private final RotatorEnergyInfoOuterClass.RotatorEnergyInfo energyInfo = RotatorEnergyInfoOuterClass.RotatorEnergyInfo.newInstance();
 
@@ -101,7 +109,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChargerInfo charger_info = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ChargerInfo charger_info = 1;</code>
      * @return whether the chargerInfo field is set
      */
     public boolean hasChargerInfo() {
@@ -109,7 +121,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChargerInfo charger_info = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ChargerInfo charger_info = 1;</code>
      * @return this
      */
     public InteractChargerScRsp clearChargerInfo() {
@@ -119,7 +135,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChargerInfo charger_info = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ChargerInfo charger_info = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -133,7 +153,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChargerInfo charger_info = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ChargerInfo charger_info = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -147,7 +171,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .ChargerInfo charger_info = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ChargerInfo charger_info = 1;</code>
      * @param value the chargerInfo to set
      * @return this
      */
@@ -158,7 +186,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 8;</code>
      * @return whether the energyInfo field is set
      */
     public boolean hasEnergyInfo() {
@@ -166,7 +198,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 8;</code>
      * @return this
      */
     public InteractChargerScRsp clearEnergyInfo() {
@@ -176,7 +212,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -190,7 +230,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -204,7 +248,11 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 8;</code>
      * @param value the energyInfo to set
      * @return this
      */
@@ -292,11 +340,11 @@ public final class InteractChargerScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 50);
+        output.writeRawByte((byte) 10);
         output.writeMessageNoTag(chargerInfo);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 98);
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(energyInfo);
       }
     }
@@ -328,20 +376,20 @@ public final class InteractChargerScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 10) {
               break;
             }
           }
-          case 50: {
+          case 10: {
             // chargerInfo
             input.readMessage(chargerInfo);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 66) {
               break;
             }
           }
-          case 98: {
+          case 66: {
             // energyInfo
             input.readMessage(energyInfo);
             bitField0_ |= 0x00000004;

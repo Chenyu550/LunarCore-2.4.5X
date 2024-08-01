@@ -66,6 +66,10 @@ public final class LineupInfoOuterClass {
     private int leaderSlot;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
      */
     private int extraLineupType;
@@ -373,6 +377,10 @@ public final class LineupInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
      * @return whether the extraLineupType field is set
      */
@@ -381,6 +389,10 @@ public final class LineupInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
      * @return this
      */
@@ -391,6 +403,10 @@ public final class LineupInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
      * @return the extraLineupType
      */
@@ -424,6 +440,10 @@ public final class LineupInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 7;</code>
      * @param value the extraLineupType to set
      * @return this

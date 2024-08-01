@@ -19,18 +19,18 @@ public final class MarkReadMailScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 id = 6;</code>
+     * <code>optional uint32 retcode = 10;</code>
      */
-    private int id;
+    private int retcode;
 
     /**
      * <pre>
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 id = 13;</code>
      */
-    private int retcode;
+    private int id;
 
     private MarkReadMailScRsp() {
     }
@@ -43,39 +43,39 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 id = 6;</code>
-     * @return whether the id field is set
+     * <code>optional uint32 retcode = 10;</code>
+     * @return whether the retcode field is set
      */
-    public boolean hasId() {
+    public boolean hasRetcode() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 id = 6;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return this
      */
-    public MarkReadMailScRsp clearId() {
+    public MarkReadMailScRsp clearRetcode() {
       bitField0_ &= ~0x00000001;
-      id = 0;
+      retcode = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 id = 6;</code>
-     * @return the id
+     * <code>optional uint32 retcode = 10;</code>
+     * @return the retcode
      */
-    public int getId() {
-      return id;
+    public int getRetcode() {
+      return retcode;
     }
 
     /**
-     * <code>optional uint32 id = 6;</code>
-     * @param value the id to set
+     * <code>optional uint32 retcode = 10;</code>
+     * @param value the retcode to set
      * @return this
      */
-    public MarkReadMailScRsp setId(final int value) {
+    public MarkReadMailScRsp setRetcode(final int value) {
       bitField0_ |= 0x00000001;
-      id = value;
+      retcode = value;
       return this;
     }
 
@@ -84,10 +84,10 @@ public final class MarkReadMailScRspOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 7;</code>
-     * @return whether the retcode field is set
+     * <code>optional uint32 id = 13;</code>
+     * @return whether the id field is set
      */
-    public boolean hasRetcode() {
+    public boolean hasId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
@@ -96,12 +96,12 @@ public final class MarkReadMailScRspOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 7;</code>
+     * <code>optional uint32 id = 13;</code>
      * @return this
      */
-    public MarkReadMailScRsp clearRetcode() {
+    public MarkReadMailScRsp clearId() {
       bitField0_ &= ~0x00000002;
-      retcode = 0;
+      id = 0;
       return this;
     }
 
@@ -110,11 +110,11 @@ public final class MarkReadMailScRspOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 7;</code>
-     * @return the retcode
+     * <code>optional uint32 id = 13;</code>
+     * @return the id
      */
-    public int getRetcode() {
-      return retcode;
+    public int getId() {
+      return id;
     }
 
     /**
@@ -122,13 +122,13 @@ public final class MarkReadMailScRspOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 7;</code>
-     * @param value the retcode to set
+     * <code>optional uint32 id = 13;</code>
+     * @param value the id to set
      * @return this
      */
-    public MarkReadMailScRsp setRetcode(final int value) {
+    public MarkReadMailScRsp setId(final int value) {
       bitField0_ |= 0x00000002;
-      retcode = value;
+      id = value;
       return this;
     }
 
@@ -137,8 +137,8 @@ public final class MarkReadMailScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        id = other.id;
         retcode = other.retcode;
+        id = other.id;
       }
       return this;
     }
@@ -149,11 +149,11 @@ public final class MarkReadMailScRspOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasId()) {
-        setId(other.id);
-      }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
+      }
+      if (other.hasId()) {
+        setId(other.id);
       }
       return this;
     }
@@ -165,8 +165,8 @@ public final class MarkReadMailScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      id = 0;
       retcode = 0;
+      id = 0;
       return this;
     }
 
@@ -190,19 +190,19 @@ public final class MarkReadMailScRspOuterClass {
       }
       MarkReadMailScRsp other = (MarkReadMailScRsp) o;
       return bitField0_ == other.bitField0_
-        && (!hasId() || id == other.id)
-        && (!hasRetcode() || retcode == other.retcode);
+        && (!hasRetcode() || retcode == other.retcode)
+        && (!hasId() || id == other.id);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(id);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(retcode);
+        output.writeRawByte((byte) 104);
+        output.writeUInt32NoTag(id);
       }
     }
 
@@ -210,10 +210,10 @@ public final class MarkReadMailScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(id);
       }
       return size;
     }
@@ -225,18 +225,18 @@ public final class MarkReadMailScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
-            // id
-            id = input.readUInt32();
+          case 80: {
+            // retcode
+            retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 104) {
               break;
             }
           }
-          case 56: {
-            // retcode
-            retcode = input.readUInt32();
+          case 104: {
+            // id
+            id = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -261,10 +261,10 @@ public final class MarkReadMailScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.id, id);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.id, id);
       }
       output.endObject();
     }
@@ -276,10 +276,10 @@ public final class MarkReadMailScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 3355: {
-            if (input.isAtField(FieldNames.id)) {
+          case 1097936398: {
+            if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
-                id = input.readUInt32();
+                retcode = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -287,10 +287,10 @@ public final class MarkReadMailScRspOuterClass {
             }
             break;
           }
-          case 1097936398: {
-            if (input.isAtField(FieldNames.retcode)) {
+          case 3355: {
+            if (input.isAtField(FieldNames.id)) {
               if (!input.trySkipNullValue()) {
-                retcode = input.readUInt32();
+                id = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -351,9 +351,9 @@ public final class MarkReadMailScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName id = FieldName.forField("id");
-
       static final FieldName retcode = FieldName.forField("retcode");
+
+      static final FieldName id = FieldName.forField("id");
     }
   }
 }

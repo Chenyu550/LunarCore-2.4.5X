@@ -19,12 +19,20 @@ public final class SellItemCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool to_material = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional bool to_material = 1;</code>
      */
     private boolean toMaterial;
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 5;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -39,7 +47,11 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool to_material = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional bool to_material = 1;</code>
      * @return whether the toMaterial field is set
      */
     public boolean hasToMaterial() {
@@ -47,7 +59,11 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool to_material = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional bool to_material = 1;</code>
      * @return this
      */
     public SellItemCsReq clearToMaterial() {
@@ -57,7 +73,11 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool to_material = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional bool to_material = 1;</code>
      * @return the toMaterial
      */
     public boolean getToMaterial() {
@@ -65,7 +85,11 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool to_material = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional bool to_material = 1;</code>
      * @param value the toMaterial to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 5;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -84,7 +112,11 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 5;</code>
      * @return this
      */
     public SellItemCsReq clearItemCostList() {
@@ -94,7 +126,11 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +144,11 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +162,11 @@ public final class SellItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 7;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 5;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -198,11 +242,11 @@ public final class SellItemCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 8);
         output.writeBoolNoTag(toMaterial);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 58);
+        output.writeRawByte((byte) 42);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -226,16 +270,16 @@ public final class SellItemCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 8: {
             // toMaterial
             toMaterial = input.readBool();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 42) {
               break;
             }
           }
-          case 58: {
+          case 42: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000002;

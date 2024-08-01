@@ -19,7 +19,11 @@ public final class GetPlayerDetailInfoCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 uid = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 uid = 1;</code>
      */
     private int uid;
 
@@ -34,7 +38,11 @@ public final class GetPlayerDetailInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 uid = 1;</code>
      * @return whether the uid field is set
      */
     public boolean hasUid() {
@@ -42,7 +50,11 @@ public final class GetPlayerDetailInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 uid = 1;</code>
      * @return this
      */
     public GetPlayerDetailInfoCsReq clearUid() {
@@ -52,7 +64,11 @@ public final class GetPlayerDetailInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 uid = 1;</code>
      * @return the uid
      */
     public int getUid() {
@@ -60,7 +76,11 @@ public final class GetPlayerDetailInfoCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 uid = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 uid = 1;</code>
      * @param value the uid to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class GetPlayerDetailInfoCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(uid);
       }
     }
@@ -150,7 +170,7 @@ public final class GetPlayerDetailInfoCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 8: {
             // uid
             uid = input.readUInt32();
             bitField0_ |= 0x00000001;

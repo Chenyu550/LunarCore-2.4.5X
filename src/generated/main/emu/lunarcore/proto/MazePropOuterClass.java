@@ -37,6 +37,10 @@ public final class MazePropOuterClass {
     private int configId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 8;</code>
      */
     private int groupId;
@@ -158,6 +162,10 @@ public final class MazePropOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 8;</code>
      * @return whether the groupId field is set
      */
@@ -166,6 +174,10 @@ public final class MazePropOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 8;</code>
      * @return this
      */
@@ -176,6 +188,10 @@ public final class MazePropOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 8;</code>
      * @return the groupId
      */
@@ -184,6 +200,10 @@ public final class MazePropOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 group_id = 8;</code>
      * @param value the groupId to set
      * @return this

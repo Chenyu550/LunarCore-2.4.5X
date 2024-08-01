@@ -20,10 +20,19 @@ public final class RankUpAvatarCsReqOuterClass {
 
     /**
      * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 rank = 6;</code>
+     */
+    private int rank;
+
+    /**
+     * <pre>
      *  uint32 base_avatar_id = 2;
      * </pre>
      *
-     * <code>optional uint32 equip_avatar_id = 3;</code>
+     * <code>optional uint32 equip_avatar_id = 14;</code>
      */
     private int equipAvatarId;
 
@@ -32,12 +41,7 @@ public final class RankUpAvatarCsReqOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 rank = 13;</code>
-     */
-    private int rank;
-
-    /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -53,79 +57,26 @@ public final class RankUpAvatarCsReqOuterClass {
 
     /**
      * <pre>
-     *  uint32 base_avatar_id = 2;
+     *
      * </pre>
      *
-     * <code>optional uint32 equip_avatar_id = 3;</code>
-     * @return whether the equipAvatarId field is set
+     * <code>optional uint32 rank = 6;</code>
+     * @return whether the rank field is set
      */
-    public boolean hasEquipAvatarId() {
+    public boolean hasRank() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
      * <pre>
-     *  uint32 base_avatar_id = 2;
-     * </pre>
-     *
-     * <code>optional uint32 equip_avatar_id = 3;</code>
-     * @return this
-     */
-    public RankUpAvatarCsReq clearEquipAvatarId() {
-      bitField0_ &= ~0x00000001;
-      equipAvatarId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *  uint32 base_avatar_id = 2;
-     * </pre>
-     *
-     * <code>optional uint32 equip_avatar_id = 3;</code>
-     * @return the equipAvatarId
-     */
-    public int getEquipAvatarId() {
-      return equipAvatarId;
-    }
-
-    /**
-     * <pre>
-     *  uint32 base_avatar_id = 2;
-     * </pre>
-     *
-     * <code>optional uint32 equip_avatar_id = 3;</code>
-     * @param value the equipAvatarId to set
-     * @return this
-     */
-    public RankUpAvatarCsReq setEquipAvatarId(final int value) {
-      bitField0_ |= 0x00000001;
-      equipAvatarId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
      *
      * </pre>
      *
-     * <code>optional uint32 rank = 13;</code>
-     * @return whether the rank field is set
-     */
-    public boolean hasRank() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 rank = 13;</code>
+     * <code>optional uint32 rank = 6;</code>
      * @return this
      */
     public RankUpAvatarCsReq clearRank() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       rank = 0;
       return this;
     }
@@ -135,7 +86,7 @@ public final class RankUpAvatarCsReqOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 rank = 13;</code>
+     * <code>optional uint32 rank = 6;</code>
      * @return the rank
      */
     public int getRank() {
@@ -147,18 +98,75 @@ public final class RankUpAvatarCsReqOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 rank = 13;</code>
+     * <code>optional uint32 rank = 6;</code>
      * @param value the rank to set
      * @return this
      */
     public RankUpAvatarCsReq setRank(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       rank = value;
       return this;
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <pre>
+     *  uint32 base_avatar_id = 2;
+     * </pre>
+     *
+     * <code>optional uint32 equip_avatar_id = 14;</code>
+     * @return whether the equipAvatarId field is set
+     */
+    public boolean hasEquipAvatarId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     *  uint32 base_avatar_id = 2;
+     * </pre>
+     *
+     * <code>optional uint32 equip_avatar_id = 14;</code>
+     * @return this
+     */
+    public RankUpAvatarCsReq clearEquipAvatarId() {
+      bitField0_ &= ~0x00000002;
+      equipAvatarId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  uint32 base_avatar_id = 2;
+     * </pre>
+     *
+     * <code>optional uint32 equip_avatar_id = 14;</code>
+     * @return the equipAvatarId
+     */
+    public int getEquipAvatarId() {
+      return equipAvatarId;
+    }
+
+    /**
+     * <pre>
+     *  uint32 base_avatar_id = 2;
+     * </pre>
+     *
+     * <code>optional uint32 equip_avatar_id = 14;</code>
+     * @param value the equipAvatarId to set
+     * @return this
+     */
+    public RankUpAvatarCsReq setEquipAvatarId(final int value) {
+      bitField0_ |= 0x00000002;
+      equipAvatarId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -166,7 +174,11 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      * @return this
      */
     public RankUpAvatarCsReq clearItemCostList() {
@@ -176,7 +188,11 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -190,7 +206,11 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -204,7 +224,11 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 5;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -219,8 +243,8 @@ public final class RankUpAvatarCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        equipAvatarId = other.equipAvatarId;
         rank = other.rank;
+        equipAvatarId = other.equipAvatarId;
         itemCostList.copyFrom(other.itemCostList);
       }
       return this;
@@ -232,11 +256,11 @@ public final class RankUpAvatarCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasEquipAvatarId()) {
-        setEquipAvatarId(other.equipAvatarId);
-      }
       if (other.hasRank()) {
         setRank(other.rank);
+      }
+      if (other.hasEquipAvatarId()) {
+        setEquipAvatarId(other.equipAvatarId);
       }
       if (other.hasItemCostList()) {
         getMutableItemCostList().mergeFrom(other.itemCostList);
@@ -251,8 +275,8 @@ public final class RankUpAvatarCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      equipAvatarId = 0;
       rank = 0;
+      equipAvatarId = 0;
       itemCostList.clear();
       return this;
     }
@@ -278,23 +302,23 @@ public final class RankUpAvatarCsReqOuterClass {
       }
       RankUpAvatarCsReq other = (RankUpAvatarCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasEquipAvatarId() || equipAvatarId == other.equipAvatarId)
         && (!hasRank() || rank == other.rank)
+        && (!hasEquipAvatarId() || equipAvatarId == other.equipAvatarId)
         && (!hasItemCostList() || itemCostList.equals(other.itemCostList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(equipAvatarId);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(rank);
       }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(equipAvatarId);
+      }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 42);
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -303,10 +327,10 @@ public final class RankUpAvatarCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(equipAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(rank);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(rank);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(equipAvatarId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(itemCostList);
@@ -321,25 +345,25 @@ public final class RankUpAvatarCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // equipAvatarId
-            equipAvatarId = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 104) {
-              break;
-            }
-          }
-          case 104: {
+          case 48: {
             // rank
             rank = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 42) {
+            if (tag != 112) {
               break;
             }
           }
-          case 42: {
+          case 112: {
+            // equipAvatarId
+            equipAvatarId = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 66) {
+              break;
+            }
+          }
+          case 66: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000004;
@@ -366,10 +390,10 @@ public final class RankUpAvatarCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.equipAvatarId, equipAvatarId);
+        output.writeUInt32(FieldNames.rank, rank);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.rank, rank);
+        output.writeUInt32(FieldNames.equipAvatarId, equipAvatarId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeMessage(FieldNames.itemCostList, itemCostList);
@@ -384,11 +408,10 @@ public final class RankUpAvatarCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 169047204:
-          case 33057906: {
-            if (input.isAtField(FieldNames.equipAvatarId)) {
+          case 3492908: {
+            if (input.isAtField(FieldNames.rank)) {
               if (!input.trySkipNullValue()) {
-                equipAvatarId = input.readUInt32();
+                rank = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -396,10 +419,11 @@ public final class RankUpAvatarCsReqOuterClass {
             }
             break;
           }
-          case 3492908: {
-            if (input.isAtField(FieldNames.rank)) {
+          case 169047204:
+          case 33057906: {
+            if (input.isAtField(FieldNames.equipAvatarId)) {
               if (!input.trySkipNullValue()) {
-                rank = input.readUInt32();
+                equipAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -472,9 +496,9 @@ public final class RankUpAvatarCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName equipAvatarId = FieldName.forField("equipAvatarId", "equip_avatar_id");
-
       static final FieldName rank = FieldName.forField("rank");
+
+      static final FieldName equipAvatarId = FieldName.forField("equipAvatarId", "equip_avatar_id");
 
       static final FieldName itemCostList = FieldName.forField("itemCostList", "item_cost_list");
     }
