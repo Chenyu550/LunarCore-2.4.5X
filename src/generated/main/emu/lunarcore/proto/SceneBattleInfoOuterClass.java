@@ -42,18 +42,18 @@ public final class SceneBattleInfoOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 logic_random_seed = 4;</code>
+     * <code>optional uint32 rounds_limit = 4;</code>
      */
-    private int logicRandomSeed;
+    private int roundsLimit;
 
     /**
      * <pre>
      *
      * </pre>
      *
-     * <code>optional uint32 rounds_limit = 9;</code>
+     * <code>optional uint32 logic_random_seed = 6;</code>
      */
-    private int roundsLimit;
+    private int logicRandomSeed;
 
     /**
      * <pre>
@@ -230,10 +230,10 @@ public final class SceneBattleInfoOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 logic_random_seed = 4;</code>
-     * @return whether the logicRandomSeed field is set
+     * <code>optional uint32 rounds_limit = 4;</code>
+     * @return whether the roundsLimit field is set
      */
-    public boolean hasLogicRandomSeed() {
+    public boolean hasRoundsLimit() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
@@ -242,64 +242,11 @@ public final class SceneBattleInfoOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 logic_random_seed = 4;</code>
-     * @return this
-     */
-    public SceneBattleInfo clearLogicRandomSeed() {
-      bitField0_ &= ~0x00000004;
-      logicRandomSeed = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 logic_random_seed = 4;</code>
-     * @return the logicRandomSeed
-     */
-    public int getLogicRandomSeed() {
-      return logicRandomSeed;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 logic_random_seed = 4;</code>
-     * @param value the logicRandomSeed to set
-     * @return this
-     */
-    public SceneBattleInfo setLogicRandomSeed(final int value) {
-      bitField0_ |= 0x00000004;
-      logicRandomSeed = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 rounds_limit = 9;</code>
-     * @return whether the roundsLimit field is set
-     */
-    public boolean hasRoundsLimit() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 rounds_limit = 9;</code>
+     * <code>optional uint32 rounds_limit = 4;</code>
      * @return this
      */
     public SceneBattleInfo clearRoundsLimit() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       roundsLimit = 0;
       return this;
     }
@@ -309,7 +256,7 @@ public final class SceneBattleInfoOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 rounds_limit = 9;</code>
+     * <code>optional uint32 rounds_limit = 4;</code>
      * @return the roundsLimit
      */
     public int getRoundsLimit() {
@@ -321,13 +268,66 @@ public final class SceneBattleInfoOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 rounds_limit = 9;</code>
+     * <code>optional uint32 rounds_limit = 4;</code>
      * @param value the roundsLimit to set
      * @return this
      */
     public SceneBattleInfo setRoundsLimit(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       roundsLimit = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 logic_random_seed = 6;</code>
+     * @return whether the logicRandomSeed field is set
+     */
+    public boolean hasLogicRandomSeed() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 logic_random_seed = 6;</code>
+     * @return this
+     */
+    public SceneBattleInfo clearLogicRandomSeed() {
+      bitField0_ &= ~0x00000008;
+      logicRandomSeed = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 logic_random_seed = 6;</code>
+     * @return the logicRandomSeed
+     */
+    public int getLogicRandomSeed() {
+      return logicRandomSeed;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 logic_random_seed = 6;</code>
+     * @param value the logicRandomSeed to set
+     * @return this
+     */
+    public SceneBattleInfo setLogicRandomSeed(final int value) {
+      bitField0_ |= 0x00000008;
+      logicRandomSeed = value;
       return this;
     }
 
@@ -859,8 +859,8 @@ public final class SceneBattleInfoOuterClass {
         bitField0_ = other.bitField0_;
         stageId = other.stageId;
         worldLevel = other.worldLevel;
-        logicRandomSeed = other.logicRandomSeed;
         roundsLimit = other.roundsLimit;
+        logicRandomSeed = other.logicRandomSeed;
         battleId = other.battleId;
         buffList.copyFrom(other.buffList);
         battleAvatarList.copyFrom(other.battleAvatarList);
@@ -883,11 +883,11 @@ public final class SceneBattleInfoOuterClass {
       if (other.hasWorldLevel()) {
         setWorldLevel(other.worldLevel);
       }
-      if (other.hasLogicRandomSeed()) {
-        setLogicRandomSeed(other.logicRandomSeed);
-      }
       if (other.hasRoundsLimit()) {
         setRoundsLimit(other.roundsLimit);
+      }
+      if (other.hasLogicRandomSeed()) {
+        setLogicRandomSeed(other.logicRandomSeed);
       }
       if (other.hasBattleId()) {
         setBattleId(other.battleId);
@@ -919,8 +919,8 @@ public final class SceneBattleInfoOuterClass {
       bitField0_ = 0;
       stageId = 0;
       worldLevel = 0;
-      logicRandomSeed = 0;
       roundsLimit = 0;
+      logicRandomSeed = 0;
       battleId = 0;
       buffList.clear();
       battleAvatarList.clear();
@@ -957,8 +957,8 @@ public final class SceneBattleInfoOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasStageId() || stageId == other.stageId)
         && (!hasWorldLevel() || worldLevel == other.worldLevel)
-        && (!hasLogicRandomSeed() || logicRandomSeed == other.logicRandomSeed)
         && (!hasRoundsLimit() || roundsLimit == other.roundsLimit)
+        && (!hasLogicRandomSeed() || logicRandomSeed == other.logicRandomSeed)
         && (!hasBattleId() || battleId == other.battleId)
         && (!hasBuffList() || buffList.equals(other.buffList))
         && (!hasBattleAvatarList() || battleAvatarList.equals(other.battleAvatarList))
@@ -979,11 +979,11 @@ public final class SceneBattleInfoOuterClass {
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(logicRandomSeed);
+        output.writeUInt32NoTag(roundsLimit);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 72);
-        output.writeUInt32NoTag(roundsLimit);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(logicRandomSeed);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 96);
@@ -1031,10 +1031,10 @@ public final class SceneBattleInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(worldLevel);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(logicRandomSeed);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(roundsLimit);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(roundsLimit);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(logicRandomSeed);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(battleId);
@@ -1083,17 +1083,17 @@ public final class SceneBattleInfoOuterClass {
             }
           }
           case 32: {
-            // logicRandomSeed
-            logicRandomSeed = input.readUInt32();
+            // roundsLimit
+            roundsLimit = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 48) {
               break;
             }
           }
-          case 72: {
-            // roundsLimit
-            roundsLimit = input.readUInt32();
+          case 48: {
+            // logicRandomSeed
+            logicRandomSeed = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 96) {
@@ -1173,10 +1173,10 @@ public final class SceneBattleInfoOuterClass {
         output.writeUInt32(FieldNames.worldLevel, worldLevel);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.logicRandomSeed, logicRandomSeed);
+        output.writeUInt32(FieldNames.roundsLimit, roundsLimit);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.roundsLimit, roundsLimit);
+        output.writeUInt32(FieldNames.logicRandomSeed, logicRandomSeed);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.battleId, battleId);
@@ -1230,11 +1230,11 @@ public final class SceneBattleInfoOuterClass {
             }
             break;
           }
-          case 141999058:
-          case -1894951668: {
-            if (input.isAtField(FieldNames.logicRandomSeed)) {
+          case 306477590:
+          case 1457479585: {
+            if (input.isAtField(FieldNames.roundsLimit)) {
               if (!input.trySkipNullValue()) {
-                logicRandomSeed = input.readUInt32();
+                roundsLimit = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -1242,11 +1242,11 @@ public final class SceneBattleInfoOuterClass {
             }
             break;
           }
-          case 306477590:
-          case 1457479585: {
-            if (input.isAtField(FieldNames.roundsLimit)) {
+          case 141999058:
+          case -1894951668: {
+            if (input.isAtField(FieldNames.logicRandomSeed)) {
               if (!input.trySkipNullValue()) {
-                roundsLimit = input.readUInt32();
+                logicRandomSeed = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -1730,9 +1730,9 @@ public final class SceneBattleInfoOuterClass {
 
       static final FieldName worldLevel = FieldName.forField("worldLevel", "world_level");
 
-      static final FieldName logicRandomSeed = FieldName.forField("logicRandomSeed", "logic_random_seed");
-
       static final FieldName roundsLimit = FieldName.forField("roundsLimit", "rounds_limit");
+
+      static final FieldName logicRandomSeed = FieldName.forField("logicRandomSeed", "logic_random_seed");
 
       static final FieldName battleId = FieldName.forField("battleId", "battle_id");
 
