@@ -93,7 +93,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     private final DisplayEquipmentInfoOuterClass.DisplayEquipmentInfo equipment = DisplayEquipmentInfoOuterClass.DisplayEquipmentInfo.newInstance();
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 11;</code>
      */
     private final RepeatedInt allPathUnlockedSpecialPointIdList = RepeatedInt.newEmptyInstance();
 
@@ -580,7 +580,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 11;</code>
      * @return whether the allPathUnlockedSpecialPointIdList field is set
      */
     public boolean hasAllPathUnlockedSpecialPointIdList() {
@@ -588,7 +588,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 11;</code>
      * @return this
      */
     public DisplayAvatarDetailInfo clearAllPathUnlockedSpecialPointIdList() {
@@ -598,7 +598,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -612,7 +612,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -626,7 +626,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 11;</code>
      * @param value the allPathUnlockedSpecialPointIdList to add
      * @return this
      */
@@ -637,7 +637,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 2;</code>
+     * <code>repeated uint32 all_path_unlocked_special_point_id_list = 11;</code>
      * @param values the allPathUnlockedSpecialPointIdList to add
      * @return this
      */
@@ -1070,7 +1070,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
       }
       if ((bitField0_ & 0x00000100) != 0) {
         for (int i = 0; i < allPathUnlockedSpecialPointIdList.length(); i++) {
-          output.writeRawByte((byte) 16);
+          output.writeRawByte((byte) 88);
           output.writeUInt32NoTag(allPathUnlockedSpecialPointIdList.array()[i]);
         }
       }
@@ -1211,11 +1211,11 @@ public final class DisplayAvatarDetailInfoOuterClass {
             input.readMessage(equipment);
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 90) {
               break;
             }
           }
-          case 18: {
+          case 90: {
             // allPathUnlockedSpecialPointIdList [packed=true]
             input.readPackedUInt32(allPathUnlockedSpecialPointIdList, tag);
             bitField0_ |= 0x00000100;
@@ -1258,7 +1258,7 @@ public final class DisplayAvatarDetailInfoOuterClass {
             tag = input.readTag();
             break;
           }
-          case 16: {
+          case 88: {
             // allPathUnlockedSpecialPointIdList [packed=false]
             tag = input.readRepeatedUInt32(allPathUnlockedSpecialPointIdList, tag);
             bitField0_ |= 0x00000100;

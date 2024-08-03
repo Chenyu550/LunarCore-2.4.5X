@@ -38,7 +38,7 @@ public class TokenLoginHandler implements Handler {
 
         if (account == null || !account.getDispatchToken().equals(req.token)) {
             res.retcode = -201;
-            res.message = "游戏账号缓存信息错误";
+            res.message = "Game account cache information error";
         } else {
             res.message = "OK";
             res.data = new VerifyData(account.getUid(), account.getEmail(), req.token);

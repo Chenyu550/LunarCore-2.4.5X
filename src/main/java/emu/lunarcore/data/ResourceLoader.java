@@ -56,7 +56,7 @@ public class ResourceLoader {
         
         // Done
         loaded = true;
-        LunarCore.getLogger().info("Resource loading complete");
+        LunarCore.getLogger().info("Resource 加载完成");
     }
     
     private static void checkDataFolder() {
@@ -224,6 +224,11 @@ public class ResourceLoader {
             String name = "P" + excel.getPlaneID() + "_F" + excel.getFloorID();
             File file = new File(LunarCore.getConfig().getResourceDir() + "/Config/LevelOutput/RuntimeFloor/" + name + ".json");
             
+            if (!file.exists()) {
+                LunarCore.getLogger().warn("Missing floor info: " + name);
+                continue;
+            }
+            
             try (FileReader reader = new FileReader(file)) {
                 FloorInfo floor = gson.fromJson(reader, FloorInfo.class);
                 GameData.getFloorInfos().put(name, floor);
@@ -337,7 +342,7 @@ public class ResourceLoader {
         
         // Notify the server owner if we are missing any files
         if (count < GameData.getAvatarExcelMap().size()) {
-            LunarCore.getLogger().warn("Maze abilities are missing, please check your resources folder: {resources}/Config/ConfigAdventureAbility/LocalPlayer. Character techniques may not work!");
+            LunarCore.getLogger().warn("Maze abilities are missing, please check your resources folder: {resources}/Config/ConfigAdventureAbility/LocalPlayer. 角色秘技可能无法工作！");
         }
 
         // Done
@@ -378,7 +383,7 @@ public class ResourceLoader {
     private static void loadRogueMapGen() {
         File file = new File(LunarCore.getConfig().getDataDir() + "/RogueMapGen.json");
         if (!file.exists()) {
-            LunarCore.getLogger().warn("在 resources 文件夹中找不到 RogueMapGen。模拟宇宙将无法使用。");
+            LunarCore.getLogger().warn("在数据文件夹中找不到 RogueMapGen。模拟宇宙将无法使用.");
             return;
         }
 

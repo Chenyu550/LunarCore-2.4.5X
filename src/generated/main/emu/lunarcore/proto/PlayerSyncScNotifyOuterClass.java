@@ -21,7 +21,7 @@ public final class PlayerSyncScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 total_achievement_exp = 552;</code>
+     * <code>optional uint32 total_achievement_exp = 1522;</code>
      */
     private int totalAchievementExp;
 
@@ -122,7 +122,7 @@ public final class PlayerSyncScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 552;</code>
+     * <code>optional uint32 total_achievement_exp = 1522;</code>
      * @return whether the totalAchievementExp field is set
      */
     public boolean hasTotalAchievementExp() {
@@ -130,7 +130,7 @@ public final class PlayerSyncScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 552;</code>
+     * <code>optional uint32 total_achievement_exp = 1522;</code>
      * @return this
      */
     public PlayerSyncScNotify clearTotalAchievementExp() {
@@ -140,7 +140,7 @@ public final class PlayerSyncScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 552;</code>
+     * <code>optional uint32 total_achievement_exp = 1522;</code>
      * @return the totalAchievementExp
      */
     public int getTotalAchievementExp() {
@@ -148,7 +148,7 @@ public final class PlayerSyncScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 total_achievement_exp = 552;</code>
+     * <code>optional uint32 total_achievement_exp = 1522;</code>
      * @param value the totalAchievementExp to set
      * @return this
      */
@@ -1131,7 +1131,7 @@ public final class PlayerSyncScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawLittleEndian16((short) 8896);
+        output.writeRawLittleEndian16((short) 24464);
         output.writeUInt32NoTag(totalAchievementExp);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -1234,7 +1234,7 @@ public final class PlayerSyncScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 4416: {
+          case 12176: {
             // totalAchievementExp
             totalAchievementExp = input.readUInt32();
             bitField0_ |= 0x00000001;

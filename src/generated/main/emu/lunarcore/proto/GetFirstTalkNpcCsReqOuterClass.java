@@ -20,7 +20,11 @@ public final class GetFirstTalkNpcCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated uint32 npc_id_list = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 npc_id_list = 14;</code>
      */
     private final RepeatedInt npcIdList = RepeatedInt.newEmptyInstance();
 
@@ -35,7 +39,11 @@ public final class GetFirstTalkNpcCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 npc_id_list = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 npc_id_list = 14;</code>
      * @return whether the npcIdList field is set
      */
     public boolean hasNpcIdList() {
@@ -43,7 +51,11 @@ public final class GetFirstTalkNpcCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 npc_id_list = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 npc_id_list = 14;</code>
      * @return this
      */
     public GetFirstTalkNpcCsReq clearNpcIdList() {
@@ -53,7 +65,11 @@ public final class GetFirstTalkNpcCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 npc_id_list = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 npc_id_list = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -67,7 +83,11 @@ public final class GetFirstTalkNpcCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 npc_id_list = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 npc_id_list = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -81,7 +101,11 @@ public final class GetFirstTalkNpcCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 npc_id_list = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 npc_id_list = 14;</code>
      * @param value the npcIdList to add
      * @return this
      */
@@ -92,7 +116,11 @@ public final class GetFirstTalkNpcCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 npc_id_list = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 npc_id_list = 14;</code>
      * @param values the npcIdList to add
      * @return this
      */
@@ -163,7 +191,7 @@ public final class GetFirstTalkNpcCsReqOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < npcIdList.length(); i++) {
-          output.writeRawByte((byte) 104);
+          output.writeRawByte((byte) 112);
           output.writeUInt32NoTag(npcIdList.array()[i]);
         }
       }
@@ -185,7 +213,7 @@ public final class GetFirstTalkNpcCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 106: {
+          case 114: {
             // npcIdList [packed=true]
             input.readPackedUInt32(npcIdList, tag);
             bitField0_ |= 0x00000001;
@@ -204,7 +232,7 @@ public final class GetFirstTalkNpcCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 104: {
+          case 112: {
             // npcIdList [packed=false]
             tag = input.readRepeatedUInt32(npcIdList, tag);
             bitField0_ |= 0x00000001;

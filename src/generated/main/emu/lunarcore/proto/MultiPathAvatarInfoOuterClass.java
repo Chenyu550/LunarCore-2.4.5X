@@ -63,21 +63,21 @@ public final class MultiPathAvatarInfoOuterClass {
 
     /**
      * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>repeated .AvatarSkillTree special_skilltree_list = 4;</code>
-     */
-    private final RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> specialSkilltreeList = RepeatedMessage.newEmptyInstance(AvatarSkillTreeOuterClass.AvatarSkillTree.getFactory());
-
-    /**
-     * <pre>
      * or smth else
      * </pre>
      *
-     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 14;</code>
+     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 4;</code>
      */
     private final RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> multiPathSkillTree = RepeatedMessage.newEmptyInstance(AvatarSkillTreeOuterClass.AvatarSkillTree.getFactory());
+
+    /**
+     * <pre>
+     * or 4
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree special_skilltree_list = 9;</code>
+     */
+    private final RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> specialSkilltreeList = RepeatedMessage.newEmptyInstance(AvatarSkillTreeOuterClass.AvatarSkillTree.getFactory());
 
     private MultiPathAvatarInfo() {
     }
@@ -437,121 +437,26 @@ public final class MultiPathAvatarInfoOuterClass {
 
     /**
      * <pre>
-     * or 4
+     * or smth else
      * </pre>
      *
-     * <code>repeated .AvatarSkillTree special_skilltree_list = 4;</code>
-     * @return whether the specialSkilltreeList field is set
+     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 4;</code>
+     * @return whether the multiPathSkillTree field is set
      */
-    public boolean hasSpecialSkilltreeList() {
+    public boolean hasMultiPathSkillTree() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
      * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>repeated .AvatarSkillTree special_skilltree_list = 4;</code>
-     * @return this
-     */
-    public MultiPathAvatarInfo clearSpecialSkilltreeList() {
-      bitField0_ &= ~0x00000020;
-      specialSkilltreeList.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>repeated .AvatarSkillTree special_skilltree_list = 4;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableSpecialSkilltreeList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getSpecialSkilltreeList() {
-      return specialSkilltreeList;
-    }
-
-    /**
-     * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>repeated .AvatarSkillTree special_skilltree_list = 4;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableSpecialSkilltreeList(
-        ) {
-      bitField0_ |= 0x00000020;
-      return specialSkilltreeList;
-    }
-
-    /**
-     * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>repeated .AvatarSkillTree special_skilltree_list = 4;</code>
-     * @param value the specialSkilltreeList to add
-     * @return this
-     */
-    public MultiPathAvatarInfo addSpecialSkilltreeList(
-        final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
-      bitField0_ |= 0x00000020;
-      specialSkilltreeList.add(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>repeated .AvatarSkillTree special_skilltree_list = 4;</code>
-     * @param values the specialSkilltreeList to add
-     * @return this
-     */
-    public MultiPathAvatarInfo addAllSpecialSkilltreeList(
-        final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
-      bitField0_ |= 0x00000020;
-      specialSkilltreeList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <pre>
      * or smth else
      * </pre>
      *
-     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 14;</code>
-     * @return whether the multiPathSkillTree field is set
-     */
-    public boolean hasMultiPathSkillTree() {
-      return (bitField0_ & 0x00000040) != 0;
-    }
-
-    /**
-     * <pre>
-     * or smth else
-     * </pre>
-     *
-     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 14;</code>
+     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 4;</code>
      * @return this
      */
     public MultiPathAvatarInfo clearMultiPathSkillTree() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000020;
       multiPathSkillTree.clear();
       return this;
     }
@@ -561,7 +466,7 @@ public final class MultiPathAvatarInfoOuterClass {
      * or smth else
      * </pre>
      *
-     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 14;</code>
+     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -579,7 +484,7 @@ public final class MultiPathAvatarInfoOuterClass {
      * or smth else
      * </pre>
      *
-     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 14;</code>
+     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -589,7 +494,7 @@ public final class MultiPathAvatarInfoOuterClass {
      */
     public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableMultiPathSkillTree(
         ) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       return multiPathSkillTree;
     }
 
@@ -598,13 +503,13 @@ public final class MultiPathAvatarInfoOuterClass {
      * or smth else
      * </pre>
      *
-     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 14;</code>
+     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 4;</code>
      * @param value the multiPathSkillTree to add
      * @return this
      */
     public MultiPathAvatarInfo addMultiPathSkillTree(
         final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       multiPathSkillTree.add(value);
       return this;
     }
@@ -614,14 +519,109 @@ public final class MultiPathAvatarInfoOuterClass {
      * or smth else
      * </pre>
      *
-     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 14;</code>
+     * <code>repeated .AvatarSkillTree multi_path_skill_tree = 4;</code>
      * @param values the multiPathSkillTree to add
      * @return this
      */
     public MultiPathAvatarInfo addAllMultiPathSkillTree(
         final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       multiPathSkillTree.addAll(values);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * or 4
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree special_skilltree_list = 9;</code>
+     * @return whether the specialSkilltreeList field is set
+     */
+    public boolean hasSpecialSkilltreeList() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <pre>
+     * or 4
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree special_skilltree_list = 9;</code>
+     * @return this
+     */
+    public MultiPathAvatarInfo clearSpecialSkilltreeList() {
+      bitField0_ &= ~0x00000040;
+      specialSkilltreeList.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     * or 4
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree special_skilltree_list = 9;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableSpecialSkilltreeList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getSpecialSkilltreeList() {
+      return specialSkilltreeList;
+    }
+
+    /**
+     * <pre>
+     * or 4
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree special_skilltree_list = 9;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<AvatarSkillTreeOuterClass.AvatarSkillTree> getMutableSpecialSkilltreeList(
+        ) {
+      bitField0_ |= 0x00000040;
+      return specialSkilltreeList;
+    }
+
+    /**
+     * <pre>
+     * or 4
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree special_skilltree_list = 9;</code>
+     * @param value the specialSkilltreeList to add
+     * @return this
+     */
+    public MultiPathAvatarInfo addSpecialSkilltreeList(
+        final AvatarSkillTreeOuterClass.AvatarSkillTree value) {
+      bitField0_ |= 0x00000040;
+      specialSkilltreeList.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * or 4
+     * </pre>
+     *
+     * <code>repeated .AvatarSkillTree special_skilltree_list = 9;</code>
+     * @param values the specialSkilltreeList to add
+     * @return this
+     */
+    public MultiPathAvatarInfo addAllSpecialSkilltreeList(
+        final AvatarSkillTreeOuterClass.AvatarSkillTree... values) {
+      bitField0_ |= 0x00000040;
+      specialSkilltreeList.addAll(values);
       return this;
     }
 
@@ -635,8 +635,8 @@ public final class MultiPathAvatarInfoOuterClass {
         avatarId = other.avatarId;
         unlockedSpecialPointIdList.copyFrom(other.unlockedSpecialPointIdList);
         equipRelicList.copyFrom(other.equipRelicList);
-        specialSkilltreeList.copyFrom(other.specialSkilltreeList);
         multiPathSkillTree.copyFrom(other.multiPathSkillTree);
+        specialSkilltreeList.copyFrom(other.specialSkilltreeList);
       }
       return this;
     }
@@ -662,11 +662,11 @@ public final class MultiPathAvatarInfoOuterClass {
       if (other.hasEquipRelicList()) {
         getMutableEquipRelicList().addAll(other.equipRelicList);
       }
-      if (other.hasSpecialSkilltreeList()) {
-        getMutableSpecialSkilltreeList().addAll(other.specialSkilltreeList);
-      }
       if (other.hasMultiPathSkillTree()) {
         getMutableMultiPathSkillTree().addAll(other.multiPathSkillTree);
+      }
+      if (other.hasSpecialSkilltreeList()) {
+        getMutableSpecialSkilltreeList().addAll(other.specialSkilltreeList);
       }
       return this;
     }
@@ -683,8 +683,8 @@ public final class MultiPathAvatarInfoOuterClass {
       avatarId = 0;
       unlockedSpecialPointIdList.clear();
       equipRelicList.clear();
-      specialSkilltreeList.clear();
       multiPathSkillTree.clear();
+      specialSkilltreeList.clear();
       return this;
     }
 
@@ -697,8 +697,8 @@ public final class MultiPathAvatarInfoOuterClass {
       bitField0_ = 0;
       unlockedSpecialPointIdList.clear();
       equipRelicList.clearQuick();
-      specialSkilltreeList.clearQuick();
       multiPathSkillTree.clearQuick();
+      specialSkilltreeList.clearQuick();
       return this;
     }
 
@@ -717,8 +717,8 @@ public final class MultiPathAvatarInfoOuterClass {
         && (!hasAvatarId() || avatarId == other.avatarId)
         && (!hasUnlockedSpecialPointIdList() || unlockedSpecialPointIdList.equals(other.unlockedSpecialPointIdList))
         && (!hasEquipRelicList() || equipRelicList.equals(other.equipRelicList))
-        && (!hasSpecialSkilltreeList() || specialSkilltreeList.equals(other.specialSkilltreeList))
-        && (!hasMultiPathSkillTree() || multiPathSkillTree.equals(other.multiPathSkillTree));
+        && (!hasMultiPathSkillTree() || multiPathSkillTree.equals(other.multiPathSkillTree))
+        && (!hasSpecialSkilltreeList() || specialSkilltreeList.equals(other.specialSkilltreeList));
     }
 
     @Override
@@ -748,15 +748,15 @@ public final class MultiPathAvatarInfoOuterClass {
         }
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        for (int i = 0; i < specialSkilltreeList.length(); i++) {
+        for (int i = 0; i < multiPathSkillTree.length(); i++) {
           output.writeRawByte((byte) 34);
-          output.writeMessageNoTag(specialSkilltreeList.get(i));
+          output.writeMessageNoTag(multiPathSkillTree.get(i));
         }
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        for (int i = 0; i < multiPathSkillTree.length(); i++) {
-          output.writeRawByte((byte) 114);
-          output.writeMessageNoTag(multiPathSkillTree.get(i));
+        for (int i = 0; i < specialSkilltreeList.length(); i++) {
+          output.writeRawByte((byte) 74);
+          output.writeMessageNoTag(specialSkilltreeList.get(i));
         }
       }
     }
@@ -780,10 +780,10 @@ public final class MultiPathAvatarInfoOuterClass {
         size += (1 * equipRelicList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(equipRelicList);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += (1 * specialSkilltreeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(specialSkilltreeList);
+        size += (1 * multiPathSkillTree.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(multiPathSkillTree);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += (1 * multiPathSkillTree.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(multiPathSkillTree);
+        size += (1 * specialSkilltreeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(specialSkilltreeList);
       }
       return size;
     }
@@ -843,16 +843,16 @@ public final class MultiPathAvatarInfoOuterClass {
             }
           }
           case 34: {
-            // specialSkilltreeList
-            tag = input.readRepeatedMessage(specialSkilltreeList, tag);
+            // multiPathSkillTree
+            tag = input.readRepeatedMessage(multiPathSkillTree, tag);
             bitField0_ |= 0x00000020;
-            if (tag != 114) {
+            if (tag != 74) {
               break;
             }
           }
-          case 114: {
-            // multiPathSkillTree
-            tag = input.readRepeatedMessage(multiPathSkillTree, tag);
+          case 74: {
+            // specialSkilltreeList
+            tag = input.readRepeatedMessage(specialSkilltreeList, tag);
             bitField0_ |= 0x00000040;
             if (tag != 0) {
               break;
@@ -897,10 +897,10 @@ public final class MultiPathAvatarInfoOuterClass {
         output.writeRepeatedMessage(FieldNames.equipRelicList, equipRelicList);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRepeatedMessage(FieldNames.specialSkilltreeList, specialSkilltreeList);
+        output.writeRepeatedMessage(FieldNames.multiPathSkillTree, multiPathSkillTree);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRepeatedMessage(FieldNames.multiPathSkillTree, multiPathSkillTree);
+        output.writeRepeatedMessage(FieldNames.specialSkilltreeList, specialSkilltreeList);
       }
       output.endObject();
     }
@@ -976,11 +976,11 @@ public final class MultiPathAvatarInfoOuterClass {
             }
             break;
           }
-          case 772023924:
-          case -1081979468: {
-            if (input.isAtField(FieldNames.specialSkilltreeList)) {
+          case 730273329:
+          case -1809703392: {
+            if (input.isAtField(FieldNames.multiPathSkillTree)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(specialSkilltreeList);
+                input.readRepeatedMessage(multiPathSkillTree);
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -988,11 +988,11 @@ public final class MultiPathAvatarInfoOuterClass {
             }
             break;
           }
-          case 730273329:
-          case -1809703392: {
-            if (input.isAtField(FieldNames.multiPathSkillTree)) {
+          case 772023924:
+          case -1081979468: {
+            if (input.isAtField(FieldNames.specialSkilltreeList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(multiPathSkillTree);
+                input.readRepeatedMessage(specialSkilltreeList);
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -1063,9 +1063,9 @@ public final class MultiPathAvatarInfoOuterClass {
 
       static final FieldName equipRelicList = FieldName.forField("equipRelicList", "equip_relic_list");
 
-      static final FieldName specialSkilltreeList = FieldName.forField("specialSkilltreeList", "special_skilltree_list");
-
       static final FieldName multiPathSkillTree = FieldName.forField("multiPathSkillTree", "multi_path_skill_tree");
+
+      static final FieldName specialSkilltreeList = FieldName.forField("specialSkilltreeList", "special_skilltree_list");
     }
   }
 }

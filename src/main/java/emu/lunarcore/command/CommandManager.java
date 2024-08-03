@@ -146,7 +146,7 @@ public class CommandManager {
             
             // Make sure our command has a target
             if (command.requireTarget() && cmdArgs.getTarget() == null) {
-                cmdArgs.sendMessage("Error: Targeted player not found or offline");
+                cmdArgs.sendMessage("错误：目标玩家找不到或已离线");
                 return;
             }
             
@@ -159,9 +159,9 @@ public class CommandManager {
             handler.execute(cmdArgs);
         } else {
             if (sender != null) {
-                sender.sendMessage("Invalid Command!");
+                sender.sendMessage("无效命令!");
             } else {
-                LunarCore.getLogger().info("Invalid Command!");
+                LunarCore.getLogger().info("无效命令!");
             }
         }
     }

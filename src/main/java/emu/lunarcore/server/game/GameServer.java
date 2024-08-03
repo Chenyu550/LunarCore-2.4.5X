@@ -177,8 +177,8 @@ public class GameServer extends KcpServer {
         System.gc();
 
         // Done
-        LunarCore.getLogger().info("启动完成，端口 " + address.getPort());
-        LunarCore.getLogger().info("PRIVATE SERVER BY CHENYU550"); // DO NOT REMOVE. Anti-seller
+        LunarCore.getLogger().info("游戏服务器启动完成，端口 " + address.getPort());
+        LunarCore.getLogger().info("-------PRIVATE SERVER BY CHENYU550-------"); // DO NOT REMOVE. Anti-seller
     }
     
     private void onTick() {

@@ -41,18 +41,18 @@ public final class ChallengeSettleNotifyOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 score_two = 12;</code>
+     * <code>optional uint32 stars = 12;</code>
      */
-    private int scoreTwo;
+    private int stars;
 
     /**
      * <pre>
      *
      * </pre>
      *
-     * <code>optional uint32 stars = 14;</code>
+     * <code>optional uint32 score_two = 14;</code>
      */
-    private int stars;
+    private int scoreTwo;
 
     /**
      * <pre>
@@ -193,10 +193,10 @@ public final class ChallengeSettleNotifyOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 score_two = 12;</code>
-     * @return whether the scoreTwo field is set
+     * <code>optional uint32 stars = 12;</code>
+     * @return whether the stars field is set
      */
-    public boolean hasScoreTwo() {
+    public boolean hasStars() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
@@ -205,64 +205,11 @@ public final class ChallengeSettleNotifyOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 score_two = 12;</code>
-     * @return this
-     */
-    public ChallengeSettleNotify clearScoreTwo() {
-      bitField0_ &= ~0x00000004;
-      scoreTwo = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 score_two = 12;</code>
-     * @return the scoreTwo
-     */
-    public int getScoreTwo() {
-      return scoreTwo;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 score_two = 12;</code>
-     * @param value the scoreTwo to set
-     * @return this
-     */
-    public ChallengeSettleNotify setScoreTwo(final int value) {
-      bitField0_ |= 0x00000004;
-      scoreTwo = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 stars = 14;</code>
-     * @return whether the stars field is set
-     */
-    public boolean hasStars() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 stars = 14;</code>
+     * <code>optional uint32 stars = 12;</code>
      * @return this
      */
     public ChallengeSettleNotify clearStars() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       stars = 0;
       return this;
     }
@@ -272,7 +219,7 @@ public final class ChallengeSettleNotifyOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 stars = 14;</code>
+     * <code>optional uint32 stars = 12;</code>
      * @return the stars
      */
     public int getStars() {
@@ -284,13 +231,66 @@ public final class ChallengeSettleNotifyOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 stars = 14;</code>
+     * <code>optional uint32 stars = 12;</code>
      * @param value the stars to set
      * @return this
      */
     public ChallengeSettleNotify setStars(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       stars = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 score_two = 14;</code>
+     * @return whether the scoreTwo field is set
+     */
+    public boolean hasScoreTwo() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 score_two = 14;</code>
+     * @return this
+     */
+    public ChallengeSettleNotify clearScoreTwo() {
+      bitField0_ &= ~0x00000008;
+      scoreTwo = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 score_two = 14;</code>
+     * @return the scoreTwo
+     */
+    public int getScoreTwo() {
+      return scoreTwo;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 score_two = 14;</code>
+     * @param value the scoreTwo to set
+     * @return this
+     */
+    public ChallengeSettleNotify setScoreTwo(final int value) {
+      bitField0_ |= 0x00000008;
+      scoreTwo = value;
       return this;
     }
 
@@ -431,8 +431,8 @@ public final class ChallengeSettleNotifyOuterClass {
         bitField0_ = other.bitField0_;
         challengeScore = other.challengeScore;
         challengeId = other.challengeId;
-        scoreTwo = other.scoreTwo;
         stars = other.stars;
+        scoreTwo = other.scoreTwo;
         isWin = other.isWin;
         reward.copyFrom(other.reward);
       }
@@ -451,11 +451,11 @@ public final class ChallengeSettleNotifyOuterClass {
       if (other.hasChallengeId()) {
         setChallengeId(other.challengeId);
       }
-      if (other.hasScoreTwo()) {
-        setScoreTwo(other.scoreTwo);
-      }
       if (other.hasStars()) {
         setStars(other.stars);
+      }
+      if (other.hasScoreTwo()) {
+        setScoreTwo(other.scoreTwo);
       }
       if (other.hasIsWin()) {
         setIsWin(other.isWin);
@@ -475,8 +475,8 @@ public final class ChallengeSettleNotifyOuterClass {
       bitField0_ = 0;
       challengeScore = 0;
       challengeId = 0;
-      scoreTwo = 0;
       stars = 0;
+      scoreTwo = 0;
       isWin = false;
       reward.clear();
       return this;
@@ -505,8 +505,8 @@ public final class ChallengeSettleNotifyOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasChallengeScore() || challengeScore == other.challengeScore)
         && (!hasChallengeId() || challengeId == other.challengeId)
-        && (!hasScoreTwo() || scoreTwo == other.scoreTwo)
         && (!hasStars() || stars == other.stars)
+        && (!hasScoreTwo() || scoreTwo == other.scoreTwo)
         && (!hasIsWin() || isWin == other.isWin)
         && (!hasReward() || reward.equals(other.reward));
     }
@@ -523,11 +523,11 @@ public final class ChallengeSettleNotifyOuterClass {
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(scoreTwo);
+        output.writeUInt32NoTag(stars);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(stars);
+        output.writeUInt32NoTag(scoreTwo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 32);
@@ -549,10 +549,10 @@ public final class ChallengeSettleNotifyOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(challengeId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(scoreTwo);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(stars);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(stars);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(scoreTwo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 2;
@@ -589,8 +589,8 @@ public final class ChallengeSettleNotifyOuterClass {
             }
           }
           case 96: {
-            // scoreTwo
-            scoreTwo = input.readUInt32();
+            // stars
+            stars = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 112) {
@@ -598,8 +598,8 @@ public final class ChallengeSettleNotifyOuterClass {
             }
           }
           case 112: {
-            // stars
-            stars = input.readUInt32();
+            // scoreTwo
+            scoreTwo = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 32) {
@@ -648,10 +648,10 @@ public final class ChallengeSettleNotifyOuterClass {
         output.writeUInt32(FieldNames.challengeId, challengeId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.scoreTwo, scoreTwo);
+        output.writeUInt32(FieldNames.stars, stars);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.stars, stars);
+        output.writeUInt32(FieldNames.scoreTwo, scoreTwo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeBool(FieldNames.isWin, isWin);
@@ -693,11 +693,10 @@ public final class ChallengeSettleNotifyOuterClass {
             }
             break;
           }
-          case -485512614:
-          case 2129303327: {
-            if (input.isAtField(FieldNames.scoreTwo)) {
+          case 109757537: {
+            if (input.isAtField(FieldNames.stars)) {
               if (!input.trySkipNullValue()) {
-                scoreTwo = input.readUInt32();
+                stars = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -705,10 +704,11 @@ public final class ChallengeSettleNotifyOuterClass {
             }
             break;
           }
-          case 109757537: {
-            if (input.isAtField(FieldNames.stars)) {
+          case -485512614:
+          case 2129303327: {
+            if (input.isAtField(FieldNames.scoreTwo)) {
               if (!input.trySkipNullValue()) {
-                stars = input.readUInt32();
+                scoreTwo = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -796,9 +796,9 @@ public final class ChallengeSettleNotifyOuterClass {
 
       static final FieldName challengeId = FieldName.forField("challengeId", "challenge_id");
 
-      static final FieldName scoreTwo = FieldName.forField("scoreTwo", "score_two");
-
       static final FieldName stars = FieldName.forField("stars");
+
+      static final FieldName scoreTwo = FieldName.forField("scoreTwo", "score_two");
 
       static final FieldName isWin = FieldName.forField("isWin", "is_win");
 

@@ -112,7 +112,7 @@ public class GachaService extends BaseGameService {
                 getGachaBanners().put(banner.getId(), banner);
             }
         } catch (Exception e) {
-            LunarCore.getLogger().warn("未能加载卡池信息！");
+            LunarCore.getLogger().warn("未能加载卡池信息!");
         }
     }
 

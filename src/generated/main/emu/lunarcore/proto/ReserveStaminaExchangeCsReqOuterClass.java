@@ -13,13 +13,21 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class ReserveStaminaExchangeCsReqOuterClass {
   /**
+   * <pre>
+   *
+   * </pre>
+   *
    * Protobuf type {@code ReserveStaminaExchangeCsReq}
    */
   public static final class ReserveStaminaExchangeCsReq extends ProtoMessage<ReserveStaminaExchangeCsReq> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 num = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 num = 1;</code>
      */
     private int num;
 
@@ -27,6 +35,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * @return a new empty instance of {@code ReserveStaminaExchangeCsReq}
      */
     public static ReserveStaminaExchangeCsReq newInstance() {
@@ -34,7 +46,11 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 num = 1;</code>
      * @return whether the num field is set
      */
     public boolean hasNum() {
@@ -42,7 +58,11 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 num = 1;</code>
      * @return this
      */
     public ReserveStaminaExchangeCsReq clearNum() {
@@ -52,7 +72,11 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 num = 1;</code>
      * @return the num
      */
     public int getNum() {
@@ -60,7 +84,11 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 6;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 num = 1;</code>
      * @param value the num to set
      * @return this
      */
@@ -129,7 +157,7 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(num);
       }
     }
@@ -150,7 +178,7 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 8: {
             // num
             num = input.readUInt32();
             bitField0_ |= 0x00000001;

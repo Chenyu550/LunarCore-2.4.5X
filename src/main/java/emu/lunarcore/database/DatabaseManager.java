@@ -36,7 +36,8 @@ import lombok.Getter;
 
 @Getter
 public final class DatabaseManager {
-    @Getter private static MongoServer server;
+    @Getter
+    private static MongoServer server;
     private Datastore datastore;
 
     private static final InsertOneOptions INSERT_OPTIONS = new InsertOneOptions();
@@ -48,10 +49,14 @@ public final class DatabaseManager {
         var internalConfig = LunarCore.getConfig().getInternalMongoServer();
         String connectionString = info.getUri();
 
-        // Local mongo server
-        if (info.isUseInternal() && Utils.isPortOpen(internalConfig.getAddress(), internalConfig.getPort())) {
-            connectionString = startInternalMongoServer(internalConfig);
-            LunarCore.getLogger().info("成功在 " + server.getConnectionString()+ " 启动了本地 MongoDB 服务器");
+        // Start local mongo server
+        if (info.isUseInternal()) {
+            if (Utils.isPortOpen(internalConfig.getAddress(), internalConfig.getPort())) {
+                connectionString = startInternalMongoServer(internalConfig);
+                LunarCore.getLogger().info("成功在 " + server.getConnectionString()+ " 启动了本地 MongoDB 服务器");
+            } else {
+                LunarCore.getLogger().warn("Local MongoDB server could not be created because the port is in use.");
+            }
         }
 
         // Initialize
@@ -101,6 +106,9 @@ public final class DatabaseManager {
 
         // Ensure indexes
         ensureIndexes();
+        
+        // Done
+        LunarCore.getLogger().info("成功连接到 " + connectionString + " 上的 MongoDB 数据库");
     }
 
     public MongoDatabase getDatabase() {

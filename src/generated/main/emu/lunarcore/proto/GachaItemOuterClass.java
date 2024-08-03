@@ -38,21 +38,21 @@ public final class GachaItemOuterClass {
 
     /**
      * <pre>
-     * or 9
+     *
      * </pre>
      *
-     * <code>optional .ItemList token_item = 4;</code>
+     * <code>optional .ItemList transfer_item_list = 4;</code>
      */
-    private final ItemListOuterClass.ItemList tokenItem = ItemListOuterClass.ItemList.newInstance();
+    private final ItemListOuterClass.ItemList transferItemList = ItemListOuterClass.ItemList.newInstance();
 
     /**
      * <pre>
-     * or 4
+     * or 9
      * </pre>
      *
-     * <code>optional .ItemList transfer_item_list = 9;</code>
+     * <code>optional .ItemList token_item = 9;</code>
      */
-    private final ItemListOuterClass.ItemList transferItemList = ItemListOuterClass.ItemList.newInstance();
+    private final ItemListOuterClass.ItemList tokenItem = ItemListOuterClass.ItemList.newInstance();
 
     private GachaItem() {
     }
@@ -196,14 +196,79 @@ public final class GachaItemOuterClass {
 
     /**
      * <pre>
-     * or 9
+     *
      * </pre>
      *
-     * <code>optional .ItemList token_item = 4;</code>
-     * @return whether the tokenItem field is set
+     * <code>optional .ItemList transfer_item_list = 4;</code>
+     * @return whether the transferItemList field is set
      */
-    public boolean hasTokenItem() {
+    public boolean hasTransferItemList() {
       return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemList transfer_item_list = 4;</code>
+     * @return this
+     */
+    public GachaItem clearTransferItemList() {
+      bitField0_ &= ~0x00000004;
+      transferItemList.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemList transfer_item_list = 4;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableTransferItemList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public ItemListOuterClass.ItemList getTransferItemList() {
+      return transferItemList;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemList transfer_item_list = 4;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public ItemListOuterClass.ItemList getMutableTransferItemList() {
+      bitField0_ |= 0x00000004;
+      return transferItemList;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .ItemList transfer_item_list = 4;</code>
+     * @param value the transferItemList to set
+     * @return this
+     */
+    public GachaItem setTransferItemList(final ItemListOuterClass.ItemList value) {
+      bitField0_ |= 0x00000004;
+      transferItemList.copyFrom(value);
+      return this;
     }
 
     /**
@@ -211,11 +276,23 @@ public final class GachaItemOuterClass {
      * or 9
      * </pre>
      *
-     * <code>optional .ItemList token_item = 4;</code>
+     * <code>optional .ItemList token_item = 9;</code>
+     * @return whether the tokenItem field is set
+     */
+    public boolean hasTokenItem() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     * or 9
+     * </pre>
+     *
+     * <code>optional .ItemList token_item = 9;</code>
      * @return this
      */
     public GachaItem clearTokenItem() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       tokenItem.clear();
       return this;
     }
@@ -225,7 +302,7 @@ public final class GachaItemOuterClass {
      * or 9
      * </pre>
      *
-     * <code>optional .ItemList token_item = 4;</code>
+     * <code>optional .ItemList token_item = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -243,7 +320,7 @@ public final class GachaItemOuterClass {
      * or 9
      * </pre>
      *
-     * <code>optional .ItemList token_item = 4;</code>
+     * <code>optional .ItemList token_item = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -252,7 +329,7 @@ public final class GachaItemOuterClass {
      * @return internal storage object for modifications
      */
     public ItemListOuterClass.ItemList getMutableTokenItem() {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       return tokenItem;
     }
 
@@ -261,90 +338,13 @@ public final class GachaItemOuterClass {
      * or 9
      * </pre>
      *
-     * <code>optional .ItemList token_item = 4;</code>
+     * <code>optional .ItemList token_item = 9;</code>
      * @param value the tokenItem to set
      * @return this
      */
     public GachaItem setTokenItem(final ItemListOuterClass.ItemList value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       tokenItem.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>optional .ItemList transfer_item_list = 9;</code>
-     * @return whether the transferItemList field is set
-     */
-    public boolean hasTransferItemList() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>optional .ItemList transfer_item_list = 9;</code>
-     * @return this
-     */
-    public GachaItem clearTransferItemList() {
-      bitField0_ &= ~0x00000008;
-      transferItemList.clear();
-      return this;
-    }
-
-    /**
-     * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>optional .ItemList transfer_item_list = 9;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableTransferItemList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public ItemListOuterClass.ItemList getTransferItemList() {
-      return transferItemList;
-    }
-
-    /**
-     * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>optional .ItemList transfer_item_list = 9;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public ItemListOuterClass.ItemList getMutableTransferItemList() {
-      bitField0_ |= 0x00000008;
-      return transferItemList;
-    }
-
-    /**
-     * <pre>
-     * or 4
-     * </pre>
-     *
-     * <code>optional .ItemList transfer_item_list = 9;</code>
-     * @param value the transferItemList to set
-     * @return this
-     */
-    public GachaItem setTransferItemList(final ItemListOuterClass.ItemList value) {
-      bitField0_ |= 0x00000008;
-      transferItemList.copyFrom(value);
       return this;
     }
 
@@ -355,8 +355,8 @@ public final class GachaItemOuterClass {
         bitField0_ = other.bitField0_;
         isNew = other.isNew;
         gachaItem.copyFrom(other.gachaItem);
-        tokenItem.copyFrom(other.tokenItem);
         transferItemList.copyFrom(other.transferItemList);
+        tokenItem.copyFrom(other.tokenItem);
       }
       return this;
     }
@@ -373,11 +373,11 @@ public final class GachaItemOuterClass {
       if (other.hasGachaItem()) {
         getMutableGachaItem().mergeFrom(other.gachaItem);
       }
-      if (other.hasTokenItem()) {
-        getMutableTokenItem().mergeFrom(other.tokenItem);
-      }
       if (other.hasTransferItemList()) {
         getMutableTransferItemList().mergeFrom(other.transferItemList);
+      }
+      if (other.hasTokenItem()) {
+        getMutableTokenItem().mergeFrom(other.tokenItem);
       }
       return this;
     }
@@ -391,8 +391,8 @@ public final class GachaItemOuterClass {
       bitField0_ = 0;
       isNew = false;
       gachaItem.clear();
-      tokenItem.clear();
       transferItemList.clear();
+      tokenItem.clear();
       return this;
     }
 
@@ -404,8 +404,8 @@ public final class GachaItemOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       gachaItem.clearQuick();
-      tokenItem.clearQuick();
       transferItemList.clearQuick();
+      tokenItem.clearQuick();
       return this;
     }
 
@@ -421,8 +421,8 @@ public final class GachaItemOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasIsNew() || isNew == other.isNew)
         && (!hasGachaItem() || gachaItem.equals(other.gachaItem))
-        && (!hasTokenItem() || tokenItem.equals(other.tokenItem))
-        && (!hasTransferItemList() || transferItemList.equals(other.transferItemList));
+        && (!hasTransferItemList() || transferItemList.equals(other.transferItemList))
+        && (!hasTokenItem() || tokenItem.equals(other.tokenItem));
     }
 
     @Override
@@ -437,11 +437,11 @@ public final class GachaItemOuterClass {
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 34);
-        output.writeMessageNoTag(tokenItem);
+        output.writeMessageNoTag(transferItemList);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 74);
-        output.writeMessageNoTag(transferItemList);
+        output.writeMessageNoTag(tokenItem);
       }
     }
 
@@ -455,10 +455,10 @@ public final class GachaItemOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(gachaItem);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(tokenItem);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(transferItemList);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(transferItemList);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(tokenItem);
       }
       return size;
     }
@@ -489,8 +489,8 @@ public final class GachaItemOuterClass {
             }
           }
           case 34: {
-            // tokenItem
-            input.readMessage(tokenItem);
+            // transferItemList
+            input.readMessage(transferItemList);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 74) {
@@ -498,8 +498,8 @@ public final class GachaItemOuterClass {
             }
           }
           case 74: {
-            // transferItemList
-            input.readMessage(transferItemList);
+            // tokenItem
+            input.readMessage(tokenItem);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -530,10 +530,10 @@ public final class GachaItemOuterClass {
         output.writeMessage(FieldNames.gachaItem, gachaItem);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeMessage(FieldNames.tokenItem, tokenItem);
+        output.writeMessage(FieldNames.transferItemList, transferItemList);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeMessage(FieldNames.transferItemList, transferItemList);
+        output.writeMessage(FieldNames.tokenItem, tokenItem);
       }
       output.endObject();
     }
@@ -569,11 +569,11 @@ public final class GachaItemOuterClass {
             }
             break;
           }
-          case 141165740:
-          case 101174681: {
-            if (input.isAtField(FieldNames.tokenItem)) {
+          case -997597348:
+          case 263056118: {
+            if (input.isAtField(FieldNames.transferItemList)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(tokenItem);
+                input.readMessage(transferItemList);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -581,11 +581,11 @@ public final class GachaItemOuterClass {
             }
             break;
           }
-          case -997597348:
-          case 263056118: {
-            if (input.isAtField(FieldNames.transferItemList)) {
+          case 141165740:
+          case 101174681: {
+            if (input.isAtField(FieldNames.tokenItem)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(transferItemList);
+                input.readMessage(tokenItem);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -649,9 +649,9 @@ public final class GachaItemOuterClass {
 
       static final FieldName gachaItem = FieldName.forField("gachaItem", "gacha_item");
 
-      static final FieldName tokenItem = FieldName.forField("tokenItem", "token_item");
-
       static final FieldName transferItemList = FieldName.forField("transferItemList", "transfer_item_list");
+
+      static final FieldName tokenItem = FieldName.forField("tokenItem", "token_item");
     }
   }
 }

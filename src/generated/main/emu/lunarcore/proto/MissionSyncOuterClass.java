@@ -25,12 +25,12 @@ public final class MissionSyncOuterClass {
      *  could be also 10
      * </pre>
      *
-     * <code>repeated uint32 main_mission_id = 1;</code>
+     * <code>repeated uint32 main_mission_id = 13;</code>
      */
     private final RepeatedInt mainMissionId = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .Mission mission_list = 3;</code>
+     * <code>repeated .Mission mission_list = 8;</code>
      */
     private final RepeatedMessage<MissionOuterClass.Mission> missionList = RepeatedMessage.newEmptyInstance(MissionOuterClass.Mission.getFactory());
 
@@ -49,7 +49,7 @@ public final class MissionSyncOuterClass {
      *  could be also 10
      * </pre>
      *
-     * <code>repeated uint32 main_mission_id = 1;</code>
+     * <code>repeated uint32 main_mission_id = 13;</code>
      * @return whether the mainMissionId field is set
      */
     public boolean hasMainMissionId() {
@@ -61,7 +61,7 @@ public final class MissionSyncOuterClass {
      *  could be also 10
      * </pre>
      *
-     * <code>repeated uint32 main_mission_id = 1;</code>
+     * <code>repeated uint32 main_mission_id = 13;</code>
      * @return this
      */
     public MissionSync clearMainMissionId() {
@@ -75,7 +75,7 @@ public final class MissionSyncOuterClass {
      *  could be also 10
      * </pre>
      *
-     * <code>repeated uint32 main_mission_id = 1;</code>
+     * <code>repeated uint32 main_mission_id = 13;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -93,7 +93,7 @@ public final class MissionSyncOuterClass {
      *  could be also 10
      * </pre>
      *
-     * <code>repeated uint32 main_mission_id = 1;</code>
+     * <code>repeated uint32 main_mission_id = 13;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -111,7 +111,7 @@ public final class MissionSyncOuterClass {
      *  could be also 10
      * </pre>
      *
-     * <code>repeated uint32 main_mission_id = 1;</code>
+     * <code>repeated uint32 main_mission_id = 13;</code>
      * @param value the mainMissionId to add
      * @return this
      */
@@ -126,7 +126,7 @@ public final class MissionSyncOuterClass {
      *  could be also 10
      * </pre>
      *
-     * <code>repeated uint32 main_mission_id = 1;</code>
+     * <code>repeated uint32 main_mission_id = 13;</code>
      * @param values the mainMissionId to add
      * @return this
      */
@@ -137,7 +137,7 @@ public final class MissionSyncOuterClass {
     }
 
     /**
-     * <code>repeated .Mission mission_list = 3;</code>
+     * <code>repeated .Mission mission_list = 8;</code>
      * @return whether the missionList field is set
      */
     public boolean hasMissionList() {
@@ -145,7 +145,7 @@ public final class MissionSyncOuterClass {
     }
 
     /**
-     * <code>repeated .Mission mission_list = 3;</code>
+     * <code>repeated .Mission mission_list = 8;</code>
      * @return this
      */
     public MissionSync clearMissionList() {
@@ -155,7 +155,7 @@ public final class MissionSyncOuterClass {
     }
 
     /**
-     * <code>repeated .Mission mission_list = 3;</code>
+     * <code>repeated .Mission mission_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -169,7 +169,7 @@ public final class MissionSyncOuterClass {
     }
 
     /**
-     * <code>repeated .Mission mission_list = 3;</code>
+     * <code>repeated .Mission mission_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -183,7 +183,7 @@ public final class MissionSyncOuterClass {
     }
 
     /**
-     * <code>repeated .Mission mission_list = 3;</code>
+     * <code>repeated .Mission mission_list = 8;</code>
      * @param value the missionList to add
      * @return this
      */
@@ -194,7 +194,7 @@ public final class MissionSyncOuterClass {
     }
 
     /**
-     * <code>repeated .Mission mission_list = 3;</code>
+     * <code>repeated .Mission mission_list = 8;</code>
      * @param values the missionList to add
      * @return this
      */
@@ -272,13 +272,13 @@ public final class MissionSyncOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < mainMissionId.length(); i++) {
-          output.writeRawByte((byte) 8);
+          output.writeRawByte((byte) 104);
           output.writeUInt32NoTag(mainMissionId.array()[i]);
         }
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < missionList.length(); i++) {
-          output.writeRawByte((byte) 26);
+          output.writeRawByte((byte) 66);
           output.writeMessageNoTag(missionList.get(i));
         }
       }
@@ -303,16 +303,16 @@ public final class MissionSyncOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 10: {
+          case 106: {
             // mainMissionId [packed=true]
             input.readPackedUInt32(mainMissionId, tag);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 26) {
+            if (tag != 66) {
               break;
             }
           }
-          case 26: {
+          case 66: {
             // missionList
             tag = input.readRepeatedMessage(missionList, tag);
             bitField0_ |= 0x00000002;
@@ -330,7 +330,7 @@ public final class MissionSyncOuterClass {
             tag = input.readTag();
             break;
           }
-          case 8: {
+          case 104: {
             // mainMissionId [packed=false]
             tag = input.readRepeatedUInt32(mainMissionId, tag);
             bitField0_ |= 0x00000001;

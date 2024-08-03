@@ -49,7 +49,7 @@ public class ComboTokenGranterHandler implements Handler {
 
         if (account == null || !account.getDispatchToken().equals(data.token)) {
             res.retcode = -201;
-            res.message = "游戏账号缓存信息错误";
+            res.message = "Game account cache information error";
         } else {
             res.message = "OK";
             res.data = new LoginData(account.getUid(), account.generateComboToken());

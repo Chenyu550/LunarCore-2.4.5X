@@ -25,22 +25,34 @@ public final class FinishTalkMissionScRspOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 sub_mission_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 sub_mission_id = 10;</code>
      */
     private int subMissionId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string talk_str = 11;</code>
      */
     private final Utf8String talkStr = Utf8String.newEmptyInstance();
 
     /**
-     * <code>repeated .MissionCustomValueData custom_value_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .MissionCustomValueData custom_value_list = 4;</code>
      */
     private final RepeatedMessage<MissionCustomValueDataOuterClass.MissionCustomValueData> customValueList = RepeatedMessage.newEmptyInstance(MissionCustomValueDataOuterClass.MissionCustomValueData.getFactory());
 
@@ -59,7 +71,7 @@ public final class FinishTalkMissionScRspOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -71,7 +83,7 @@ public final class FinishTalkMissionScRspOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return this
      */
     public FinishTalkMissionScRsp clearRetcode() {
@@ -85,7 +97,7 @@ public final class FinishTalkMissionScRspOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -97,7 +109,7 @@ public final class FinishTalkMissionScRspOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 8;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -108,7 +120,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 sub_mission_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 sub_mission_id = 10;</code>
      * @return whether the subMissionId field is set
      */
     public boolean hasSubMissionId() {
@@ -116,7 +132,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 sub_mission_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 sub_mission_id = 10;</code>
      * @return this
      */
     public FinishTalkMissionScRsp clearSubMissionId() {
@@ -126,7 +146,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 sub_mission_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 sub_mission_id = 10;</code>
      * @return the subMissionId
      */
     public int getSubMissionId() {
@@ -134,7 +158,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 sub_mission_id = 13;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 sub_mission_id = 10;</code>
      * @param value the subMissionId to set
      * @return this
      */
@@ -145,6 +173,10 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string talk_str = 11;</code>
      * @return whether the talkStr field is set
      */
@@ -153,6 +185,10 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string talk_str = 11;</code>
      * @return this
      */
@@ -163,6 +199,10 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string talk_str = 11;</code>
      * @return the talkStr
      */
@@ -171,6 +211,10 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string talk_str = 11;</code>
      * @return internal {@code Utf8String} representation of talkStr for reading
      */
@@ -179,6 +223,10 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string talk_str = 11;</code>
      * @return internal {@code Utf8String} representation of talkStr for modifications
      */
@@ -188,6 +236,10 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string talk_str = 11;</code>
      * @param value the talkStr to set
      * @return this
@@ -199,6 +251,10 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string talk_str = 11;</code>
      * @param value the talkStr to set
      * @return this
@@ -210,7 +266,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MissionCustomValueData custom_value_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .MissionCustomValueData custom_value_list = 4;</code>
      * @return whether the customValueList field is set
      */
     public boolean hasCustomValueList() {
@@ -218,7 +278,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MissionCustomValueData custom_value_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .MissionCustomValueData custom_value_list = 4;</code>
      * @return this
      */
     public FinishTalkMissionScRsp clearCustomValueList() {
@@ -228,7 +292,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MissionCustomValueData custom_value_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .MissionCustomValueData custom_value_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -243,7 +311,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MissionCustomValueData custom_value_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .MissionCustomValueData custom_value_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -258,7 +330,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MissionCustomValueData custom_value_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .MissionCustomValueData custom_value_list = 4;</code>
      * @param value the customValueList to add
      * @return this
      */
@@ -270,7 +346,11 @@ public final class FinishTalkMissionScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MissionCustomValueData custom_value_list = 12;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated .MissionCustomValueData custom_value_list = 4;</code>
      * @param values the customValueList to add
      * @return this
      */
@@ -360,11 +440,11 @@ public final class FinishTalkMissionScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(subMissionId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -373,7 +453,7 @@ public final class FinishTalkMissionScRspOuterClass {
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < customValueList.length(); i++) {
-          output.writeRawByte((byte) 98);
+          output.writeRawByte((byte) 34);
           output.writeMessageNoTag(customValueList.get(i));
         }
       }
@@ -404,16 +484,16 @@ public final class FinishTalkMissionScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 64: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 80) {
               break;
             }
           }
-          case 104: {
+          case 80: {
             // subMissionId
             subMissionId = input.readUInt32();
             bitField0_ |= 0x00000002;
@@ -427,11 +507,11 @@ public final class FinishTalkMissionScRspOuterClass {
             input.readString(talkStr);
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 98) {
+            if (tag != 34) {
               break;
             }
           }
-          case 98: {
+          case 34: {
             // customValueList
             tag = input.readRepeatedMessage(customValueList, tag);
             bitField0_ |= 0x00000008;

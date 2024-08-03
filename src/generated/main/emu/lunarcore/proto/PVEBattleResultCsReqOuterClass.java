@@ -48,7 +48,11 @@ public final class PVEBattleResultCsReqOuterClass {
     private int clientResVersion;
 
     /**
-     * <code>optional uint32 cost_time = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 cost_time = 13;</code>
      */
     private int costTime;
 
@@ -66,7 +70,7 @@ public final class PVEBattleResultCsReqOuterClass {
      *  13 14 4
      * </pre>
      *
-     * <code>optional bool is_ai_consider_ultra_skill = 13;</code>
+     * <code>optional bool is_ai_consider_ultra_skill = 14;</code>
      */
     private boolean isAiConsiderUltraSkill;
 
@@ -267,7 +271,11 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 cost_time = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 cost_time = 13;</code>
      * @return whether the costTime field is set
      */
     public boolean hasCostTime() {
@@ -275,7 +283,11 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 cost_time = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 cost_time = 13;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearCostTime() {
@@ -285,7 +297,11 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 cost_time = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 cost_time = 13;</code>
      * @return the costTime
      */
     public int getCostTime() {
@@ -293,7 +309,11 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 cost_time = 14;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 cost_time = 13;</code>
      * @param value the costTime to set
      * @return this
      */
@@ -387,7 +407,7 @@ public final class PVEBattleResultCsReqOuterClass {
      *  13 14 4
      * </pre>
      *
-     * <code>optional bool is_ai_consider_ultra_skill = 13;</code>
+     * <code>optional bool is_ai_consider_ultra_skill = 14;</code>
      * @return whether the isAiConsiderUltraSkill field is set
      */
     public boolean hasIsAiConsiderUltraSkill() {
@@ -399,7 +419,7 @@ public final class PVEBattleResultCsReqOuterClass {
      *  13 14 4
      * </pre>
      *
-     * <code>optional bool is_ai_consider_ultra_skill = 13;</code>
+     * <code>optional bool is_ai_consider_ultra_skill = 14;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearIsAiConsiderUltraSkill() {
@@ -413,7 +433,7 @@ public final class PVEBattleResultCsReqOuterClass {
      *  13 14 4
      * </pre>
      *
-     * <code>optional bool is_ai_consider_ultra_skill = 13;</code>
+     * <code>optional bool is_ai_consider_ultra_skill = 14;</code>
      * @return the isAiConsiderUltraSkill
      */
     public boolean getIsAiConsiderUltraSkill() {
@@ -425,7 +445,7 @@ public final class PVEBattleResultCsReqOuterClass {
      *  13 14 4
      * </pre>
      *
-     * <code>optional bool is_ai_consider_ultra_skill = 13;</code>
+     * <code>optional bool is_ai_consider_ultra_skill = 14;</code>
      * @param value the isAiConsiderUltraSkill to set
      * @return this
      */
@@ -833,7 +853,7 @@ public final class PVEBattleResultCsReqOuterClass {
         output.writeUInt32NoTag(clientResVersion);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(costTime);
       }
       if ((bitField0_ & 0x00000010) != 0) {
@@ -841,7 +861,7 @@ public final class PVEBattleResultCsReqOuterClass {
         output.writeEnumNoTag(endStatus);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 112);
         output.writeBoolNoTag(isAiConsiderUltraSkill);
       }
       if ((bitField0_ & 0x00000040) != 0) {
@@ -923,11 +943,11 @@ public final class PVEBattleResultCsReqOuterClass {
             clientResVersion = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 104) {
               break;
             }
           }
-          case 112: {
+          case 104: {
             // costTime
             costTime = input.readUInt32();
             bitField0_ |= 0x00000008;
@@ -944,11 +964,11 @@ public final class PVEBattleResultCsReqOuterClass {
               bitField0_ |= 0x00000010;
             }
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 112) {
               break;
             }
           }
-          case 104: {
+          case 112: {
             // isAiConsiderUltraSkill
             isAiConsiderUltraSkill = input.readBool();
             bitField0_ |= 0x00000020;
