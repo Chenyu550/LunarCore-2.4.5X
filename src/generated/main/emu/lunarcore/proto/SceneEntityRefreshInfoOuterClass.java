@@ -23,7 +23,7 @@ public final class SceneEntityRefreshInfoOuterClass {
      * or 14
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      */
     private int delEntity;
 
@@ -51,7 +51,7 @@ public final class SceneEntityRefreshInfoOuterClass {
      * or 14
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      * @return whether the delEntity field is set
      */
     public boolean hasDelEntity() {
@@ -63,7 +63,7 @@ public final class SceneEntityRefreshInfoOuterClass {
      * or 14
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      * @return this
      */
     public SceneEntityRefreshInfo clearDelEntity() {
@@ -77,7 +77,7 @@ public final class SceneEntityRefreshInfoOuterClass {
      * or 14
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      * @return the delEntity
      */
     public int getDelEntity() {
@@ -89,7 +89,7 @@ public final class SceneEntityRefreshInfoOuterClass {
      * or 14
      * </pre>
      *
-     * <code>optional uint32 del_entity = 3;</code>
+     * <code>optional uint32 del_entity = 14;</code>
      * @param value the delEntity to set
      * @return this
      */
@@ -243,7 +243,7 @@ public final class SceneEntityRefreshInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(delEntity);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -271,7 +271,7 @@ public final class SceneEntityRefreshInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 112: {
             // delEntity
             delEntity = input.readUInt32();
             bitField0_ |= 0x00000001;

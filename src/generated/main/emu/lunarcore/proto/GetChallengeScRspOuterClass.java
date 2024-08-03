@@ -38,7 +38,7 @@ public final class GetChallengeScRspOuterClass {
      *
      * </pre>
      *
-     * <code>repeated .ChallengeReward challenge_reward_list = 2;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
      */
     private final RepeatedMessage<ChallengeRewardOuterClass.ChallengeReward> challengeRewardList = RepeatedMessage.newEmptyInstance(ChallengeRewardOuterClass.ChallengeReward.getFactory());
 
@@ -186,7 +186,7 @@ public final class GetChallengeScRspOuterClass {
      *
      * </pre>
      *
-     * <code>repeated .ChallengeReward challenge_reward_list = 2;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
      * @return whether the challengeRewardList field is set
      */
     public boolean hasChallengeRewardList() {
@@ -198,7 +198,7 @@ public final class GetChallengeScRspOuterClass {
      *
      * </pre>
      *
-     * <code>repeated .ChallengeReward challenge_reward_list = 2;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
      * @return this
      */
     public GetChallengeScRsp clearChallengeRewardList() {
@@ -212,7 +212,7 @@ public final class GetChallengeScRspOuterClass {
      *
      * </pre>
      *
-     * <code>repeated .ChallengeReward challenge_reward_list = 2;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -230,7 +230,7 @@ public final class GetChallengeScRspOuterClass {
      *
      * </pre>
      *
-     * <code>repeated .ChallengeReward challenge_reward_list = 2;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -249,7 +249,7 @@ public final class GetChallengeScRspOuterClass {
      *
      * </pre>
      *
-     * <code>repeated .ChallengeReward challenge_reward_list = 2;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
      * @param value the challengeRewardList to add
      * @return this
      */
@@ -265,7 +265,7 @@ public final class GetChallengeScRspOuterClass {
      *
      * </pre>
      *
-     * <code>repeated .ChallengeReward challenge_reward_list = 2;</code>
+     * <code>repeated .ChallengeReward challenge_reward_list = 14;</code>
      * @param values the challengeRewardList to add
      * @return this
      */
@@ -360,7 +360,7 @@ public final class GetChallengeScRspOuterClass {
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < challengeRewardList.length(); i++) {
-          output.writeRawByte((byte) 18);
+          output.writeRawByte((byte) 114);
           output.writeMessageNoTag(challengeRewardList.get(i));
         }
       }
@@ -401,11 +401,11 @@ public final class GetChallengeScRspOuterClass {
             // challengeList
             tag = input.readRepeatedMessage(challengeList, tag);
             bitField0_ |= 0x00000002;
-            if (tag != 18) {
+            if (tag != 114) {
               break;
             }
           }
-          case 18: {
+          case 114: {
             // challengeRewardList
             tag = input.readRepeatedMessage(challengeRewardList, tag);
             bitField0_ |= 0x00000004;

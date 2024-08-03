@@ -80,12 +80,20 @@ public final class PlayerDetailInfoOuterClass {
     private boolean isBanned;
 
     /**
-     * <code>optional .PlayerRecordInfo record_info = 16;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
      */
     private final PlayerRecordInfoOuterClass.PlayerRecordInfo recordInfo = PlayerRecordInfoOuterClass.PlayerRecordInfo.newInstance();
 
     /**
-     * <code>optional .PlayerDisplaySettings display_settings = 1265;</code>
+     * <pre>
+     * sus
+     * </pre>
+     *
+     * <code>optional .PlayerDisplaySettings display_settings = 1743;</code>
      */
     private final PlayerDisplaySettingsOuterClass.PlayerDisplaySettings displaySettings = PlayerDisplaySettingsOuterClass.PlayerDisplaySettings.newInstance();
 
@@ -516,7 +524,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerRecordInfo record_info = 16;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
      * @return whether the recordInfo field is set
      */
     public boolean hasRecordInfo() {
@@ -524,7 +536,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerRecordInfo record_info = 16;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
      * @return this
      */
     public PlayerDetailInfo clearRecordInfo() {
@@ -534,7 +550,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerRecordInfo record_info = 16;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -548,7 +568,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerRecordInfo record_info = 16;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -562,7 +586,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerRecordInfo record_info = 16;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
      * @param value the recordInfo to set
      * @return this
      */
@@ -573,7 +601,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerDisplaySettings display_settings = 1265;</code>
+     * <pre>
+     * sus
+     * </pre>
+     *
+     * <code>optional .PlayerDisplaySettings display_settings = 1743;</code>
      * @return whether the displaySettings field is set
      */
     public boolean hasDisplaySettings() {
@@ -581,7 +613,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerDisplaySettings display_settings = 1265;</code>
+     * <pre>
+     * sus
+     * </pre>
+     *
+     * <code>optional .PlayerDisplaySettings display_settings = 1743;</code>
      * @return this
      */
     public PlayerDetailInfo clearDisplaySettings() {
@@ -591,7 +627,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerDisplaySettings display_settings = 1265;</code>
+     * <pre>
+     * sus
+     * </pre>
+     *
+     * <code>optional .PlayerDisplaySettings display_settings = 1743;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -605,7 +645,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerDisplaySettings display_settings = 1265;</code>
+     * <pre>
+     * sus
+     * </pre>
+     *
+     * <code>optional .PlayerDisplaySettings display_settings = 1743;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -619,7 +663,11 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
-     * <code>optional .PlayerDisplaySettings display_settings = 1265;</code>
+     * <pre>
+     * sus
+     * </pre>
+     *
+     * <code>optional .PlayerDisplaySettings display_settings = 1743;</code>
      * @param value the displaySettings to set
      * @return this
      */
@@ -1173,11 +1221,11 @@ public final class PlayerDetailInfoOuterClass {
         output.writeBoolNoTag(isBanned);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawLittleEndian16((short) 386);
+        output.writeRawByte((byte) 58);
         output.writeMessageNoTag(recordInfo);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRawLittleEndian16((short) 20362);
+        output.writeRawLittleEndian16((short) 27898);
         output.writeMessageNoTag(displaySettings);
       }
       if ((bitField0_ & 0x00000200) != 0) {
@@ -1227,7 +1275,7 @@ public final class PlayerDetailInfoOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += 2 + ProtoSink.computeMessageSizeNoTag(recordInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(recordInfo);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         size += 2 + ProtoSink.computeMessageSizeNoTag(displaySettings);
@@ -1316,20 +1364,20 @@ public final class PlayerDetailInfoOuterClass {
             isBanned = input.readBool();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
-            if (tag != 130) {
+            if (tag != 58) {
               break;
             }
           }
-          case 130: {
+          case 58: {
             // recordInfo
             input.readMessage(recordInfo);
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 10122) {
+            if (tag != 13946) {
               break;
             }
           }
-          case 10122: {
+          case 13946: {
             // displaySettings
             input.readMessage(displaySettings);
             bitField0_ |= 0x00000100;

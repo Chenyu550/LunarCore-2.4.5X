@@ -5,7 +5,7 @@
 
 [EN](README.md) | [简中](docs/README_zh-CN.md) | [繁中](docs/README_zh-TW.md) | [JP](docs/README_ja-JP.md) | [RU](docs/README_ru-RU.md) | [FR](docs/README_fr-FR.md) | [KR](docs/README_ko-KR.md) | [VI](docs/README_vi-VI.md)
 
-**注意:** 高级功能如忘却之庭、末日幻影等尚未修复
+
 
 ### Notable features
 - Basic game features: Logging in, team setup, inventory, basic scene/entity management

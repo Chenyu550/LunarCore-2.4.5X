@@ -20,7 +20,11 @@ public final class ChallengeBossBuffInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 buff_list = 10;</code>
      */
     private final RepeatedInt buffList = RepeatedInt.newEmptyInstance();
 
@@ -35,7 +39,11 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 buff_list = 10;</code>
      * @return whether the buffList field is set
      */
     public boolean hasBuffList() {
@@ -43,7 +51,11 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 buff_list = 10;</code>
      * @return this
      */
     public ChallengeBossBuffInfo clearBuffList() {
@@ -53,7 +65,11 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 buff_list = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -67,7 +83,11 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 buff_list = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -81,7 +101,11 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 buff_list = 10;</code>
      * @param value the buffList to add
      * @return this
      */
@@ -92,7 +116,11 @@ public final class ChallengeBossBuffInfoOuterClass {
     }
 
     /**
-     * <code>repeated uint32 buff_list = 9;</code>
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>repeated uint32 buff_list = 10;</code>
      * @param values the buffList to add
      * @return this
      */
@@ -163,7 +191,7 @@ public final class ChallengeBossBuffInfoOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < buffList.length(); i++) {
-          output.writeRawByte((byte) 72);
+          output.writeRawByte((byte) 80);
           output.writeUInt32NoTag(buffList.array()[i]);
         }
       }
@@ -185,7 +213,7 @@ public final class ChallengeBossBuffInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 74: {
+          case 82: {
             // buffList [packed=true]
             input.readPackedUInt32(buffList, tag);
             bitField0_ |= 0x00000001;
@@ -204,7 +232,7 @@ public final class ChallengeBossBuffInfoOuterClass {
             tag = input.readTag();
             break;
           }
-          case 72: {
+          case 80: {
             // buffList [packed=false]
             tag = input.readRepeatedUInt32(buffList, tag);
             bitField0_ |= 0x00000001;
