@@ -19,7 +19,7 @@ public final class RogueAreaOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 rogue_status = 5;</code>
+     * <code>optional uint32 rogue_status = 2;</code>
      */
     private int rogueStatus;
 
@@ -59,7 +59,7 @@ public final class RogueAreaOuterClass {
     }
 
     /**
-     * <code>optional uint32 rogue_status = 5;</code>
+     * <code>optional uint32 rogue_status = 2;</code>
      * @return whether the rogueStatus field is set
      */
     public boolean hasRogueStatus() {
@@ -67,7 +67,7 @@ public final class RogueAreaOuterClass {
     }
 
     /**
-     * <code>optional uint32 rogue_status = 5;</code>
+     * <code>optional uint32 rogue_status = 2;</code>
      * @return this
      */
     public RogueArea clearRogueStatus() {
@@ -77,7 +77,7 @@ public final class RogueAreaOuterClass {
     }
 
     /**
-     * <code>optional uint32 rogue_status = 5;</code>
+     * <code>optional uint32 rogue_status = 2;</code>
      * @return the rogueStatus
      */
     public int getRogueStatus() {
@@ -85,7 +85,7 @@ public final class RogueAreaOuterClass {
     }
 
     /**
-     * <code>optional uint32 rogue_status = 5;</code>
+     * <code>optional uint32 rogue_status = 2;</code>
      * @param value the rogueStatus to set
      * @return this
      */
@@ -369,7 +369,7 @@ public final class RogueAreaOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(rogueStatus);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -425,7 +425,7 @@ public final class RogueAreaOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 16: {
             // rogueStatus
             rogueStatus = input.readUInt32();
             bitField0_ |= 0x00000001;

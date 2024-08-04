@@ -19,12 +19,20 @@ public final class RogueCurVirtualItemInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 cur_talent_coin = 12;</code>
+     * <pre>
+     *  6 10
+     * </pre>
+     *
+     * <code>optional uint32 cur_talent_coin = 6;</code>
      */
     private int curTalentCoin;
 
     /**
-     * <code>optional uint32 cur_rogue_coin = 15;</code>
+     * <pre>
+     *  10 6
+     * </pre>
+     *
+     * <code>optional uint32 cur_rogue_coin = 10;</code>
      */
     private int curRogueCoin;
 
@@ -39,7 +47,11 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_talent_coin = 12;</code>
+     * <pre>
+     *  6 10
+     * </pre>
+     *
+     * <code>optional uint32 cur_talent_coin = 6;</code>
      * @return whether the curTalentCoin field is set
      */
     public boolean hasCurTalentCoin() {
@@ -47,7 +59,11 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_talent_coin = 12;</code>
+     * <pre>
+     *  6 10
+     * </pre>
+     *
+     * <code>optional uint32 cur_talent_coin = 6;</code>
      * @return this
      */
     public RogueCurVirtualItemInfo clearCurTalentCoin() {
@@ -57,7 +73,11 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_talent_coin = 12;</code>
+     * <pre>
+     *  6 10
+     * </pre>
+     *
+     * <code>optional uint32 cur_talent_coin = 6;</code>
      * @return the curTalentCoin
      */
     public int getCurTalentCoin() {
@@ -65,7 +85,11 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_talent_coin = 12;</code>
+     * <pre>
+     *  6 10
+     * </pre>
+     *
+     * <code>optional uint32 cur_talent_coin = 6;</code>
      * @param value the curTalentCoin to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_rogue_coin = 15;</code>
+     * <pre>
+     *  10 6
+     * </pre>
+     *
+     * <code>optional uint32 cur_rogue_coin = 10;</code>
      * @return whether the curRogueCoin field is set
      */
     public boolean hasCurRogueCoin() {
@@ -84,7 +112,11 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_rogue_coin = 15;</code>
+     * <pre>
+     *  10 6
+     * </pre>
+     *
+     * <code>optional uint32 cur_rogue_coin = 10;</code>
      * @return this
      */
     public RogueCurVirtualItemInfo clearCurRogueCoin() {
@@ -94,7 +126,11 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_rogue_coin = 15;</code>
+     * <pre>
+     *  10 6
+     * </pre>
+     *
+     * <code>optional uint32 cur_rogue_coin = 10;</code>
      * @return the curRogueCoin
      */
     public int getCurRogueCoin() {
@@ -102,7 +138,11 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_rogue_coin = 15;</code>
+     * <pre>
+     *  10 6
+     * </pre>
+     *
+     * <code>optional uint32 cur_rogue_coin = 10;</code>
      * @param value the curRogueCoin to set
      * @return this
      */
@@ -177,11 +217,11 @@ public final class RogueCurVirtualItemInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(curTalentCoin);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(curRogueCoin);
       }
     }
@@ -205,16 +245,16 @@ public final class RogueCurVirtualItemInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 48: {
             // curTalentCoin
             curTalentCoin = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 80) {
               break;
             }
           }
-          case 120: {
+          case 80: {
             // curRogueCoin
             curRogueCoin = input.readUInt32();
             bitField0_ |= 0x00000002;

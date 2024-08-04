@@ -40,7 +40,7 @@ public final class RogueMapInfoOuterClass {
     private int curRoomId;
 
     /**
-     * <code>repeated .RogueRoom room_list = 4;</code>
+     * <code>repeated .RogueRoom room_list = 10;</code>
      */
     private final RepeatedMessage<RogueRoomOuterClass.RogueRoom> roomList = RepeatedMessage.newEmptyInstance(RogueRoomOuterClass.RogueRoom.getFactory());
 
@@ -203,7 +203,7 @@ public final class RogueMapInfoOuterClass {
     }
 
     /**
-     * <code>repeated .RogueRoom room_list = 4;</code>
+     * <code>repeated .RogueRoom room_list = 10;</code>
      * @return whether the roomList field is set
      */
     public boolean hasRoomList() {
@@ -211,7 +211,7 @@ public final class RogueMapInfoOuterClass {
     }
 
     /**
-     * <code>repeated .RogueRoom room_list = 4;</code>
+     * <code>repeated .RogueRoom room_list = 10;</code>
      * @return this
      */
     public RogueMapInfo clearRoomList() {
@@ -221,7 +221,7 @@ public final class RogueMapInfoOuterClass {
     }
 
     /**
-     * <code>repeated .RogueRoom room_list = 4;</code>
+     * <code>repeated .RogueRoom room_list = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -235,7 +235,7 @@ public final class RogueMapInfoOuterClass {
     }
 
     /**
-     * <code>repeated .RogueRoom room_list = 4;</code>
+     * <code>repeated .RogueRoom room_list = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -249,7 +249,7 @@ public final class RogueMapInfoOuterClass {
     }
 
     /**
-     * <code>repeated .RogueRoom room_list = 4;</code>
+     * <code>repeated .RogueRoom room_list = 10;</code>
      * @param value the roomList to add
      * @return this
      */
@@ -260,7 +260,7 @@ public final class RogueMapInfoOuterClass {
     }
 
     /**
-     * <code>repeated .RogueRoom room_list = 4;</code>
+     * <code>repeated .RogueRoom room_list = 10;</code>
      * @param values the roomList to add
      * @return this
      */
@@ -371,7 +371,7 @@ public final class RogueMapInfoOuterClass {
       }
       if ((bitField0_ & 0x00000010) != 0) {
         for (int i = 0; i < roomList.length(); i++) {
-          output.writeRawByte((byte) 34);
+          output.writeRawByte((byte) 82);
           output.writeMessageNoTag(roomList.get(i));
         }
       }
@@ -437,11 +437,11 @@ public final class RogueMapInfoOuterClass {
             curRoomId = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 82) {
               break;
             }
           }
-          case 34: {
+          case 82: {
             // roomList
             tag = input.readRepeatedMessage(roomList, tag);
             bitField0_ |= 0x00000010;

@@ -19,16 +19,16 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 story_id = 4;</code>
+     * <code>optional uint32 story_id = 7;</code>
      */
     private int storyId;
 
     /**
      * <pre>
-     *  2 finished
+     *
      * </pre>
      *
-     * <code>optional uint32 status = 5;</code>
+     * <code>optional uint32 status = 9;</code>
      */
     private int status;
 
@@ -43,7 +43,7 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 story_id = 4;</code>
+     * <code>optional uint32 story_id = 7;</code>
      * @return whether the storyId field is set
      */
     public boolean hasStoryId() {
@@ -51,7 +51,7 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 story_id = 4;</code>
+     * <code>optional uint32 story_id = 7;</code>
      * @return this
      */
     public ChessRogueNousMainStoryInfo clearStoryId() {
@@ -61,7 +61,7 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 story_id = 4;</code>
+     * <code>optional uint32 story_id = 7;</code>
      * @return the storyId
      */
     public int getStoryId() {
@@ -69,7 +69,7 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 story_id = 4;</code>
+     * <code>optional uint32 story_id = 7;</code>
      * @param value the storyId to set
      * @return this
      */
@@ -81,10 +81,10 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
 
     /**
      * <pre>
-     *  2 finished
+     *
      * </pre>
      *
-     * <code>optional uint32 status = 5;</code>
+     * <code>optional uint32 status = 9;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
@@ -93,10 +93,10 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
 
     /**
      * <pre>
-     *  2 finished
+     *
      * </pre>
      *
-     * <code>optional uint32 status = 5;</code>
+     * <code>optional uint32 status = 9;</code>
      * @return this
      */
     public ChessRogueNousMainStoryInfo clearStatus() {
@@ -107,10 +107,10 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
 
     /**
      * <pre>
-     *  2 finished
+     *
      * </pre>
      *
-     * <code>optional uint32 status = 5;</code>
+     * <code>optional uint32 status = 9;</code>
      * @return the status
      */
     public int getStatus() {
@@ -119,10 +119,10 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
 
     /**
      * <pre>
-     *  2 finished
+     *
      * </pre>
      *
-     * <code>optional uint32 status = 5;</code>
+     * <code>optional uint32 status = 9;</code>
      * @param value the status to set
      * @return this
      */
@@ -197,11 +197,11 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(storyId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(status);
       }
     }
@@ -225,16 +225,16 @@ public final class ChessRogueNousMainStoryInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 56: {
             // storyId
             storyId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 72) {
               break;
             }
           }
-          case 40: {
+          case 72: {
             // status
             status = input.readUInt32();
             bitField0_ |= 0x00000002;

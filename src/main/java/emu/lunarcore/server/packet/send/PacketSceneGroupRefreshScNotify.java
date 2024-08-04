@@ -6,6 +6,7 @@ import emu.lunarcore.game.scene.entity.GameEntity;
 import emu.lunarcore.proto.SceneEntityRefreshInfoOuterClass.SceneEntityRefreshInfo;
 import emu.lunarcore.proto.SceneGroupRefreshInfoOuterClass.SceneGroupRefreshInfo;
 import emu.lunarcore.proto.SceneGroupRefreshScNotifyOuterClass.SceneGroupRefreshScNotify;
+import emu.lunarcore.proto.SceneGroupRefreshTypeOuterClass;
 import emu.lunarcore.server.packet.BasePacket;
 import emu.lunarcore.server.packet.CmdId;
 
@@ -15,7 +16,9 @@ public class PacketSceneGroupRefreshScNotify extends BasePacket {
         super(CmdId.SceneGroupRefreshScNotify);
 
         var group = SceneGroupRefreshInfo.newInstance();
-
+        //修复上下半怪物一样
+        group.setGroupRefreshType(SceneGroupRefreshTypeOuterClass.SceneGroupRefreshType.SCENE_GROUP_REFRESH_TYPE_LOADED);
+        
         if (toAdd != null) {
             group.setGroupId(toAdd.getGroupId());
             group.addRefreshEntity(SceneEntityRefreshInfo.newInstance().setAddEntity(toAdd.toSceneEntityProto()));

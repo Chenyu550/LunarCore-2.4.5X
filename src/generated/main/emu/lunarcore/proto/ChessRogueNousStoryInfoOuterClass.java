@@ -20,12 +20,12 @@ public final class ChessRogueNousStoryInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 story_id = 3;</code>
+     * <code>optional uint32 story_id = 12;</code>
      */
     private int storyId;
 
     /**
-     * <code>optional uint32 sub_story_id = 7;</code>
+     * <code>optional uint32 sub_story_id = 13;</code>
      */
     private int subStoryId;
 
@@ -40,7 +40,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     private boolean cKEKKMGIHKJ;
 
     /**
-     * <code>optional bool AHOJIDMLFPE = 12;</code>
+     * <code>optional bool AHOJIDMLFPE = 18;</code>
      */
     private boolean aHOJIDMLFPE;
 
@@ -70,7 +70,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 story_id = 3;</code>
+     * <code>optional uint32 story_id = 12;</code>
      * @return whether the storyId field is set
      */
     public boolean hasStoryId() {
@@ -78,7 +78,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 story_id = 3;</code>
+     * <code>optional uint32 story_id = 12;</code>
      * @return this
      */
     public ChessRogueNousStoryInfo clearStoryId() {
@@ -88,7 +88,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 story_id = 3;</code>
+     * <code>optional uint32 story_id = 12;</code>
      * @return the storyId
      */
     public int getStoryId() {
@@ -96,7 +96,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 story_id = 3;</code>
+     * <code>optional uint32 story_id = 12;</code>
      * @param value the storyId to set
      * @return this
      */
@@ -107,7 +107,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 sub_story_id = 7;</code>
+     * <code>optional uint32 sub_story_id = 13;</code>
      * @return whether the subStoryId field is set
      */
     public boolean hasSubStoryId() {
@@ -115,7 +115,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 sub_story_id = 7;</code>
+     * <code>optional uint32 sub_story_id = 13;</code>
      * @return this
      */
     public ChessRogueNousStoryInfo clearSubStoryId() {
@@ -125,7 +125,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 sub_story_id = 7;</code>
+     * <code>optional uint32 sub_story_id = 13;</code>
      * @return the subStoryId
      */
     public int getSubStoryId() {
@@ -133,7 +133,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 sub_story_id = 7;</code>
+     * <code>optional uint32 sub_story_id = 13;</code>
      * @param value the subStoryId to set
      * @return this
      */
@@ -218,7 +218,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional bool AHOJIDMLFPE = 12;</code>
+     * <code>optional bool AHOJIDMLFPE = 18;</code>
      * @return whether the aHOJIDMLFPE field is set
      */
     public boolean hasAHOJIDMLFPE() {
@@ -226,7 +226,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional bool AHOJIDMLFPE = 12;</code>
+     * <code>optional bool AHOJIDMLFPE = 18;</code>
      * @return this
      */
     public ChessRogueNousStoryInfo clearAHOJIDMLFPE() {
@@ -236,7 +236,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional bool AHOJIDMLFPE = 12;</code>
+     * <code>optional bool AHOJIDMLFPE = 18;</code>
      * @return the aHOJIDMLFPE
      */
     public boolean getAHOJIDMLFPE() {
@@ -244,7 +244,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
     }
 
     /**
-     * <code>optional bool AHOJIDMLFPE = 12;</code>
+     * <code>optional bool AHOJIDMLFPE = 18;</code>
      * @param value the aHOJIDMLFPE to set
      * @return this
      */
@@ -562,11 +562,11 @@ public final class ChessRogueNousStoryInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(storyId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(subStoryId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -578,7 +578,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
         output.writeBoolNoTag(cKEKKMGIHKJ);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawLittleEndian16((short) 400);
         output.writeBoolNoTag(aHOJIDMLFPE);
       }
       if ((bitField0_ & 0x00000020) != 0) {
@@ -617,7 +617,7 @@ public final class ChessRogueNousStoryInfoOuterClass {
         size += 2;
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 2;
+        size += 3;
       }
       if ((bitField0_ & 0x00000020) != 0) {
         size += (1 * hCPCJBDBBGC.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(hCPCJBDBBGC);
@@ -638,16 +638,16 @@ public final class ChessRogueNousStoryInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
+          case 96: {
             // storyId
             storyId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 56) {
+            if (tag != 104) {
               break;
             }
           }
-          case 56: {
+          case 104: {
             // subStoryId
             subStoryId = input.readUInt32();
             bitField0_ |= 0x00000002;
@@ -670,11 +670,11 @@ public final class ChessRogueNousStoryInfoOuterClass {
             cKEKKMGIHKJ = input.readBool();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 144) {
               break;
             }
           }
-          case 96: {
+          case 144: {
             // aHOJIDMLFPE
             aHOJIDMLFPE = input.readBool();
             bitField0_ |= 0x00000010;

@@ -13,23 +13,27 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class RogueUnlockProgressOuterClass {
   /**
+   * <pre>
+   *
+   * </pre>
+   *
    * Protobuf type {@code RogueUnlockProgress}
    */
   public static final class RogueUnlockProgress extends ProtoMessage<RogueUnlockProgress> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 progress = 1;</code>
+     * <code>optional uint32 progress = 13;</code>
      */
     private int progress;
 
     /**
-     * <code>optional uint32 unlock_id = 3;</code>
+     * <code>optional uint32 unlock_id = 14;</code>
      */
     private int unlockId;
 
     /**
-     * <code>optional bool finish = 9;</code>
+     * <code>optional bool finish = 5;</code>
      */
     private boolean finish;
 
@@ -37,6 +41,10 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * @return a new empty instance of {@code RogueUnlockProgress}
      */
     public static RogueUnlockProgress newInstance() {
@@ -44,7 +52,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional uint32 progress = 1;</code>
+     * <code>optional uint32 progress = 13;</code>
      * @return whether the progress field is set
      */
     public boolean hasProgress() {
@@ -52,7 +60,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional uint32 progress = 1;</code>
+     * <code>optional uint32 progress = 13;</code>
      * @return this
      */
     public RogueUnlockProgress clearProgress() {
@@ -62,7 +70,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional uint32 progress = 1;</code>
+     * <code>optional uint32 progress = 13;</code>
      * @return the progress
      */
     public int getProgress() {
@@ -70,7 +78,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional uint32 progress = 1;</code>
+     * <code>optional uint32 progress = 13;</code>
      * @param value the progress to set
      * @return this
      */
@@ -81,7 +89,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional uint32 unlock_id = 3;</code>
+     * <code>optional uint32 unlock_id = 14;</code>
      * @return whether the unlockId field is set
      */
     public boolean hasUnlockId() {
@@ -89,7 +97,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional uint32 unlock_id = 3;</code>
+     * <code>optional uint32 unlock_id = 14;</code>
      * @return this
      */
     public RogueUnlockProgress clearUnlockId() {
@@ -99,7 +107,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional uint32 unlock_id = 3;</code>
+     * <code>optional uint32 unlock_id = 14;</code>
      * @return the unlockId
      */
     public int getUnlockId() {
@@ -107,7 +115,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional uint32 unlock_id = 3;</code>
+     * <code>optional uint32 unlock_id = 14;</code>
      * @param value the unlockId to set
      * @return this
      */
@@ -118,7 +126,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional bool finish = 9;</code>
+     * <code>optional bool finish = 5;</code>
      * @return whether the finish field is set
      */
     public boolean hasFinish() {
@@ -126,7 +134,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional bool finish = 9;</code>
+     * <code>optional bool finish = 5;</code>
      * @return this
      */
     public RogueUnlockProgress clearFinish() {
@@ -136,7 +144,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional bool finish = 9;</code>
+     * <code>optional bool finish = 5;</code>
      * @return the finish
      */
     public boolean getFinish() {
@@ -144,7 +152,7 @@ public final class RogueUnlockProgressOuterClass {
     }
 
     /**
-     * <code>optional bool finish = 9;</code>
+     * <code>optional bool finish = 5;</code>
      * @param value the finish to set
      * @return this
      */
@@ -225,15 +233,15 @@ public final class RogueUnlockProgressOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(progress);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(unlockId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 40);
         output.writeBoolNoTag(finish);
       }
     }
@@ -260,25 +268,25 @@ public final class RogueUnlockProgressOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 104: {
             // progress
             progress = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 24) {
+            if (tag != 112) {
               break;
             }
           }
-          case 24: {
+          case 112: {
             // unlockId
             unlockId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 40) {
               break;
             }
           }
-          case 72: {
+          case 40: {
             // finish
             finish = input.readBool();
             bitField0_ |= 0x00000004;
