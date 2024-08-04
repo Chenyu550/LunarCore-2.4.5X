@@ -68,7 +68,7 @@ public class LunarCore {
 
     public static void main(String[] args) {
         // Start Server
-        LunarCore.getLogger().info("正在启动 Lunar Core " + getJarVersion());
+        LunarCore.getLogger().info("正在启动 LunarCore " + getJarVersion());
         LunarCore.getLogger().info("Git hash: " + getGitHash());
         LunarCore.getLogger().info("游戏版本: " + GameConstants.VERSION);
         boolean generateHandbook = true;

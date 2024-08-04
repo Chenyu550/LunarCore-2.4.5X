@@ -24,6 +24,10 @@ public class SceneEntityLoader {
                 continue;
             }
             
+            //避免触发一些任务或剧情导致在新图里卡死
+            if (group.getOwnerMainMissionID() > 0) {
+                continue;
+            }
             // Load group
             scene.loadGroup(group);
         }
