@@ -43,7 +43,7 @@ public class UsernameLoginHandler implements Handler {
                 account = AccountHelper.createAccount(req.account, null, 0);
             } else {
                 res.retcode = -201;
-                res.message = "Username not found.";
+                res.message = "账号不存在";
             }
         } 
         
